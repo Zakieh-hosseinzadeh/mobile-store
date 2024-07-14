@@ -162,7 +162,6 @@ a#go-to-top:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100px;
     margin: 10px;
     column-gap: $gap;
 
@@ -192,10 +191,8 @@ a#go-to-top:hover {
 //section category
 
 #amazings {
-  min-height: 150px;
 
   #pro-box {
-    min-height: 100px;
     display: flex;
     padding: 15px;
     column-gap: $gap;
@@ -243,7 +240,6 @@ a#go-to-top:hover {
 //section amazing things
 
 #best-selling {
-  min-height: 100px;
 
   #b-sell-box {
     display: flex;
@@ -282,7 +278,8 @@ a#go-to-top:hover {
   .b-sell:hover > a > .img-hover {
     opacity: 1;
   }
-  .b-sell h4{
+
+  .b-sell h4 {
     @include transition();
   }
 
@@ -302,9 +299,11 @@ a#go-to-top:hover {
     transition: all .3s ease 0s;
     opacity: 0;
   }
-  .b-sell:hover>.btn-like{
+
+  .b-sell:hover > .btn-like {
     opacity: 1;
   }
+
   .btn-like li {
     flex: 1;
   }
@@ -316,8 +315,57 @@ a#go-to-top:hover {
     color: #fff;
     @include transition();
   }
-  .btn-like a:hover{
+
+  .btn-like a:hover {
     background-color: $primaryColor;
+  }
+
+}
+
+//section selling product
+
+#ads-banner {
+  position: relative;
+  #img-banner img {
+    width: 100%;
+  }
+  .container-content{
+    text-align: center;
+    width: 28%;
+    position: absolute;
+    left: 15%;
+    bottom: 10%;
+  }
+  .container-content h4{
+    width: 140px;
+    //height: 40px;
+    margin: 0 auto;
+    padding: $gap;
+    background-color: $primaryColor;
+    color: #fff;
+  }
+  .container-content h2{
+    font-size: 2.5rem;
+  }
+  .container-content a{
+    color: $seconderyColor;
+    @include transition();
+  }
+  .container-content a:hover{
+    color: $primaryColor;
+  }
+  #time-btn{
+    display: flex;
+    column-gap: $gap;
+    margin: 25px 0 65px 0;
+  }
+  .time{
+    padding: $gap;
+    flex: 1;
+    @include brRadius();
+    box-shadow: $shadow;
+    display: flex;
+    flex-direction: column;
   }
 
 }
