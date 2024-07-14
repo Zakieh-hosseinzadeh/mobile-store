@@ -48,10 +48,10 @@ html, body {
 
 .title {
   @include fontPinar();
-  font-size: 25px;
   margin: 20px 0;
   h3 {
     margin: 0;
+    font-size: 25px;
     display: inline-block;
   }
 
@@ -79,4 +79,44 @@ html, body {
   margin-right: 5px;
 }
 
+
+.menu ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  column-gap: $gap*2;
+
+}
+
+.menu li a {
+  color: $primaryColor;
+  @include transition();
+}
+
+.menu li a:hover {
+  color: $seconderyColor;
+}
+
+.menu li a:hover {
+  background-color: $lightblue;
+  padding: 7px;
+  border-radius: 25px;
+}
+.active-menu{
+  background-color: $lightblue;
+  padding: 7px;
+  border-radius: 25px;
+}
+.img-hover {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  @include transition();
+}
+.popular:hover > a > .img-hover,
+.b-sell:hover > a > .img-hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
 

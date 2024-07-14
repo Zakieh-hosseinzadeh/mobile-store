@@ -3,8 +3,7 @@
 @import "general";
 
 
-a#go-to-top:link,
-a#go-to-top:visited {
+#go-to-top {
   width: $gap*3;
   height: $gap*3;
   display: flex;
@@ -14,13 +13,12 @@ a#go-to-top:visited {
   color: white;
   background-color: $seconderyColor;
   box-shadow: 0 0 23px 5px rgb(255 255 255 / 8%);
-  text-decoration: none;
   position: fixed;
   bottom: 20px;
-  /*left: 20px;*/
+  left: 20px;
   margin-right: 20px;
   z-index: 20;
-  transition: all 0.3s;
+  @include transition();
 }
 
 a#go-to-top:hover {
@@ -38,29 +36,6 @@ a#go-to-top:hover {
   padding: 10px 30px;
   align-items: center;
 
-
-  #menu ul {
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    column-gap: $gap*2;
-
-  }
-
-  #menu li a {
-    color: $primaryColor;
-    @include transition();
-  }
-
-  #menu li a:hover {
-    color: $seconderyColor;
-  }
-
-  #menu li a:hover {
-    background-color: $lightblue;
-    padding: 7px;
-    border-radius: 25px;
-  }
 
   .icons {
     display: flex;
@@ -184,7 +159,7 @@ a#go-to-top:hover {
   }
 
   .categories:hover > img {
-    transform: scale(1.05);
+    @include transformSCL();
   }
 }
 
@@ -232,132 +207,141 @@ a#go-to-top:hover {
     }
 
     .amazing-things:hover > .banner-wrapper > a > img {
-      transform: scale(1.05);
+      @include transformSCL();
     }
   }
 }
 
 //section amazing things
 
-#best-selling {
 
-  #b-sell-box {
-    display: flex;
-    column-gap: $gap;
+.b-sell-box {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: $gap;
 
-
-    .img-hover {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      opacity: 0;
-      @include transition();
-    }
-
-    .b-sell {
-      flex: 1;
-      transition: all 0.5s;
-      box-shadow: $shadow;
-      text-align: center;
-      cursor: pointer;
-    }
-
-    .b-sell > a > img:first-child {
-      width: 100%;
-      @include transition()
-    }
+  .b-sell a {
+    position: relative;
   }
 
-  .b-sell:hover > a > img:nth-child(1) {
+  .img-hover {
+    width: 100%;
+    position: absolute;
+    left: 0;
     opacity: 0;
-  }
-
-  .b-sell:hover > a > .img-hover {
-    opacity: 1;
-  }
-
-  .b-sell h4 {
     @include transition();
   }
 
-  .b-sell h4:hover {
-    color: $primaryColor;
-  }
-
-  .b-sell p {
-    color: $primaryColor;
-  }
-
-  .btn-like {
-    display: flex;
-    padding: 0;
-    width: 60%;
-    margin: 0 auto;
-    transition: all .3s ease 0s;
-    opacity: 0;
-  }
-
-  .b-sell:hover > .btn-like {
-    opacity: 1;
-  }
-
-  .btn-like li {
+  .b-sell {
     flex: 1;
+    transition: all 0.5s;
+    box-shadow: $shadow;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
   }
 
-  .btn-like a {
-    border-radius: 50%;
-    padding: 7px;
-    background-color: $seconderyColor;
-    color: #fff;
-    @include transition();
+  .b-sell > a > img:first-child {
+    width: 100%;
+    @include transition()
   }
+}
 
-  .btn-like a:hover {
-    background-color: $primaryColor;
-  }
+.b-sell:hover > a > img:nth-child(1) {
+  opacity: 0;
+}
 
+.b-sell:hover > a > .img-hover {
+  opacity: 1;
+  @include transformSCL();
+}
+
+.b-sell h4 {
+  @include transition();
+}
+
+.b-sell h4:hover {
+  color: $primaryColor;
+}
+
+.b-sell p {
+  color: $primaryColor;
+}
+
+.btn-like {
+  display: flex;
+  padding: 0;
+  width: 60%;
+  margin: 0 auto;
+  transition: all .3s ease 0s;
+  opacity: 0;
+}
+
+.b-sell:hover > .btn-like {
+  opacity: 1;
+}
+
+.btn-like li {
+  flex: 1;
+}
+
+.btn-like a {
+  border-radius: 50%;
+  padding: 7px;
+  background-color: $seconderyColor;
+  color: #fff;
+  @include transition();
+}
+
+.btn-like a:hover {
+  background-color: $primaryColor;
 }
 
 //section selling product
 
 #ads-banner {
   position: relative;
+
   #img-banner img {
     width: 100%;
   }
-  .container-content{
+
+  .container-content {
     text-align: center;
     width: 28%;
     position: absolute;
     left: 15%;
     bottom: 10%;
   }
-  .container-content h4{
+
+  .container-content h4 {
     width: 140px;
     margin: 0 auto;
     padding: $gap;
     background-color: $primaryColor;
     color: #fff;
   }
-  .container-content h2{
+
+  .container-content h2 {
     font-size: 2.5rem;
   }
-  .container-content a{
+
+  .container-content a {
     color: $seconderyColor;
     @include transition();
   }
-  .container-content a:hover{
+
+  .container-content a:hover {
     color: $primaryColor;
   }
-  #time-btn{
+
+  #time-btn {
     display: flex;
     column-gap: $gap;
     margin: 25px 0 65px 0;
   }
-  .time{
+
+  .time {
     padding: $gap;
     flex: 1;
     @include brRadius();
@@ -367,6 +351,134 @@ a#go-to-top:hover {
   }
 
 }
+
+//section ads banner
+#popular-products {
+  .title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu-pro {
+    display: flex;
+  }
+
+  .menu-pro li {
+    flex: 1;
+  }
+
+  #popular-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: $gap*2;
+  }
+
+  .popular {
+    transition: all 0.5s;
+    box-shadow: $shadow;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .popular img {
+    width: 100%;
+  }
+
+  .popular a {
+    position: relative;
+  }
+}
+
+//section popular products
+#news {
+
+  background-color: $tertheryColor;
+  padding: 70px 0;
+
+  #news-form {
+    width: 50%;
+    margin: 0 auto;
+    background-color: white;
+    @include brRadius();
+    padding: 5px;
+    box-shadow: $shadow;
+  }
+
+  #news-form input {
+    border: 0;
+  }
+
+  #user-email {
+    padding: $gap;
+    direction: ltr;
+    width: calc(100% - 100px);
+  }
+
+  .title,
+  .sub-title {
+    text-align: center;
+  }
+
+  .sub-title {
+    font-weight: bold;
+    color: gray;
+  }
+}
+
+#blogs {
+  min-height: 100px;
+
+  #blog-box {
+    display: flex;
+    column-gap: $gap;
+  }
+
+  .blog {
+    flex: 1;
+    overflow: hidden;
+  }
+
+  .blog img {
+    width: 100%;
+    @include transition();
+
+  }
+
+  .blog:hover img {
+    @include transformSCL();
+  }
+
+  .blog-content {
+    margin: $gap 0;
+    color: gray;
+  }
+
+  .blog-content .fa-calendar {
+    margin-left: 5px;
+  }
+
+}
+
+//section blog
+#brands {
+  margin: $gap*2 0;
+
+  #brand-box {
+    display: flex;
+    column-gap: $gap;
+  }
+
+  .brand {
+    flex: 1;
+  }
+
+  .brand img {
+    width: 60%;
+  }
+}
+
+
 
 
 
