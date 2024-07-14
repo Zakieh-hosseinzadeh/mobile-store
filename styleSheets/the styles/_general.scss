@@ -15,6 +15,7 @@ a:visited {
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 html, body {
@@ -118,5 +119,21 @@ html, body {
 .b-sell:hover > a > .img-hover {
   opacity: 1;
   transform: scale(1.05);
+}
+
+#copy-right{
+    background-color: $lightgray;
+
+  #copy {
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .fa-brain {
+    color: green;
+    vertical-align: middle;
+  }
 }
 

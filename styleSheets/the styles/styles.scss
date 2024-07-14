@@ -393,7 +393,7 @@ a#go-to-top:hover {
 //section popular products
 #news {
 
-  background-color: $tertheryColor;
+  background-color: $lightgray;
   padding: 70px 0;
 
   #news-form {
@@ -475,6 +475,50 @@ a#go-to-top:hover {
 
   .brand img {
     width: 60%;
+  }
+}
+
+//section brands
+
+#footer {
+
+  #footer-box {
+    display: flex;
+    min-height: 100px;
+  }
+
+  .foot {
+    flex: 1;
+  }
+
+  .foot:last-child {
+    flex-grow: 1.3;
+  }
+
+  .foot p,
+  .foot li {
+    color: gray;
+  }
+
+  .lists li {
+    margin: 10px 0;
+    padding-right: 5px;
+  }
+
+  .lists i {
+    color: $primaryColor;
+  }
+
+  .lists a:link,
+  .lists a:visited {
+    color: black;
+    @include transition();
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: 2px;
+  }
+  .lists a:hover {
+    color:$primaryColor;
   }
 }
 
