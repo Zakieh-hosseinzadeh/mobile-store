@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "IRANYekan";
+  font-weight: normal;
+  src: url("../fonts/iranyekan/svg/iranyekanwebregular.svg");
+  src: url("../fonts/iranyekan/ttf/iranyekanwebregular.ttf");
+  src: url("../fonts/iranyekan/woff/iranyekanwebregular.woff");
+  src: url("../fonts/iranyekan/woff2/iranyekanwebregular.woff2");
+}
+
+@font-face {
+  font-family: "IRANYekan";
+  font-weight: bold;
+  src: url("./../fonts/iranyekan/svg/iranyekanwebbold.svg");
+  src: url("./../fonts/iranyekan/ttf/iranyekanwebbold.ttf");
+  src: url("./../fonts/iranyekan/woff/iranyekanwebbold.woff");
+  src: url("./../fonts/iranyekan/woff2/iranyekanwebbold.woff2");
+}
+
+@font-face {
+  font-family: "Pinar";
+  font-weight: normal;
+  src: url("./../fonts/pinar/Pinar-Regular.ttf") format('truetype'),
+  url("./../fonts/pinar/Pinar-Regular.woff2") format('woff');
+}
+
+@font-face {
+  font-family: "Pinar";
+  font-weight: bold;
+  src: url("../fonts/pinar/Pinar-Bold.ttf") format('truetype'),
+  url("../fonts/pinar/Pinar-Bold.woff2") format('woff');
+}
+$primaryColor:#7774ff;
+$seconderyColor:#232c35;
+$tertheryColor:#feef2f5;
+$lightblue:#a5bbcb;
+$gap:15px;
+$shadow:0 0 3px 1px rgb(190 190 190 / 28%);
+$border:1px solid black;

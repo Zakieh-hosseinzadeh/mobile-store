@@ -1,0 +1,330 @@
+@import "mixins";
+@import "variables";
+@import "general";
+
+
+a#go-to-top:link,
+a#go-to-top:visited {
+  width: $gap*3;
+  height: $gap*3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  background-color: $seconderyColor;
+  box-shadow: 0 0 23px 5px rgb(255 255 255 / 8%);
+  text-decoration: none;
+  position: fixed;
+  bottom: 20px;
+  /*left: 20px;*/
+  margin-right: 20px;
+  z-index: 20;
+  transition: all 0.3s;
+}
+
+a#go-to-top:hover {
+  background-color: $primaryColor;
+}
+
+#go-to-top > .fa-arrow-up::before {
+  font-size: 20px;
+}
+
+
+#top-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  align-items: center;
+
+
+  #menu ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    column-gap: $gap*2;
+
+  }
+
+  #menu li a {
+    color: $primaryColor;
+    @include transition();
+  }
+
+  #menu li a:hover {
+    color: $seconderyColor;
+  }
+
+  #menu li :hover {
+    background-color: $lightblue;
+    padding: 7px;
+    border-radius: 25px;
+  }
+
+  .icons {
+    display: flex;
+    column-gap: $gap*2;
+  }
+
+  .icons i {
+    font-size: 25px;
+    color: $seconderyColor;
+    @include transition();
+  }
+
+  .icons i:hover {
+    color: $primaryColor;
+    cursor: pointer;
+  }
+}
+
+//top header
+
+#home {
+  position: relative;
+
+  #slideshow {
+    direction: ltr;
+    overflow: hidden;
+    position: relative;
+
+    .bxslider img {
+      width: 100%;
+    }
+
+    .bx-wrapper {
+      box-shadow: none;
+      border: 0;
+      margin: 0;
+    }
+
+    .bx-controls-direction {
+      display: none;
+    }
+
+    .bx-wrapper .bx-controls-auto, .bx-wrapper .bx-pager {
+      bottom: 20px;
+    }
+
+    .bx-wrapper .bx-pager.bx-default-pager a {
+      background-color: lightgray;
+    }
+
+    .bx-wrapper .bx-pager.bx-default-pager a.active,
+    .bx-wrapper .bx-pager.bx-default-pager a:focus,
+    .bx-wrapper .bx-pager.bx-default-pager a:hover {
+      background-color: $primaryColor;
+    }
+  }
+
+  .container-box {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .box-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 160px;
+
+    #txt-slideshow {
+
+      h1 {
+        font-size: 3.5em;
+        margin: 20px 0;
+      }
+
+      h4 {
+        color: #f00;
+        font-size: 22px;
+        margin: 0;
+      }
+
+      div {
+        margin-top: 30px;
+      }
+
+
+    }
+
+
+  }
+}
+
+//section home
+
+#category {
+
+
+  #category-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    margin: 10px;
+    column-gap: $gap;
+
+    .categories {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      @include brRadius();
+      overflow: hidden;
+      box-shadow: $shadow;
+      cursor: pointer;
+    }
+  }
+
+  .categories img {
+    width: 100%;
+    @include transition();
+  }
+
+  .categories:hover > img {
+    transform: scale(1.05);
+  }
+}
+
+//section category
+
+#amazings {
+  min-height: 150px;
+
+  #pro-box {
+    min-height: 100px;
+    display: flex;
+    padding: 15px;
+    column-gap: $gap;
+
+    .amazing-things {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .amazing-things img {
+      width: 100%;
+      @include transition();
+
+    }
+
+    .banner-content {
+      position: absolute;
+      top: 15px;
+      right: 105px;
+      text-align: center;
+
+    }
+
+
+    .banner-content p {
+      margin: 0;
+    }
+
+    .banner-content h2 {
+      margin: 12px;
+    }
+
+    .amazing-things:hover > .banner-content > div > a {
+      background-color: $seconderyColor;
+    }
+
+    .amazing-things:hover > .banner-wrapper > a > img {
+      transform: scale(1.05);
+    }
+  }
+}
+
+//section amazing things
+
+#best-selling {
+  min-height: 100px;
+
+  #b-sell-box {
+    display: flex;
+    column-gap: $gap;
+
+
+    .img-hover {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      @include transition();
+    }
+
+    .b-sell {
+      flex: 1;
+      //border: $border;
+      transition: all 0.5s;
+      box-shadow: $shadow;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .b-sell > a > img:first-child {
+      width: 100%;
+      @include transition()
+    }
+  }
+
+  .b-sell:hover > a > img:nth-child(1) {
+    opacity: 0;
+  }
+
+  .b-sell:hover > a > .img-hover {
+    opacity: 1;
+  }
+  .b-sell h4{
+    @include transition();
+  }
+
+  .b-sell h4:hover {
+    color: $primaryColor;
+  }
+
+  .b-sell p {
+    color: $primaryColor;
+  }
+
+  .btn-like {
+    display: flex;
+    padding: 0;
+    width: 60%;
+    margin: 0 auto;
+    transition: all .3s ease 0s;
+    opacity: 0;
+  }
+  .b-sell:hover>.btn-like{
+    opacity: 1;
+  }
+  .btn-like li {
+    flex: 1;
+  }
+
+  .btn-like a {
+    border-radius: 50%;
+    padding: 7px;
+    background-color: $seconderyColor;
+    color: #fff;
+    @include transition();
+  }
+  .btn-like a:hover{
+    background-color: $primaryColor;
+  }
+
+}
+
+
+
+
+
+
+

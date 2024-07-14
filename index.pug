@@ -1,0 +1,223 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        title welcome to my site
+        link(href="styleSheets/the styles/styles.css" rel="stylesheet")
+        link(href="styleSheets/components/normalize.css" rel="stylesheet")
+        link(href="styleSheets/components/fontawesome.css" rel="stylesheet")
+        link(href="styleSheets/components/solid.css" rel="stylesheet")
+        link(href="styleSheets/components/brands.css" rel="stylesheet")
+        link(href="styleSheets/components/jquery.bxslider.min.css" rel="stylesheet")
+        link(href="styleSheets/components/aos.css" rel="stylesheet")
+        link(href="styleSheets/components/slick.css" rel="stylesheet")
+        link(href="styleSheets/components/slick-theme.css" rel="stylesheet")
+    body
+        //a#go-to-top
+        //    i.fa-solid.fa-arrow-up
+        main
+            .container
+                header#top-header
+                    a(href="index.html")#logo
+                        img(src="images" alt="لوگوی سایت")
+                    nav#menu
+                        ul
+                            li
+                                a(href="#") خانه
+                            li
+                                a(href="#") دسته بندی محصولات
+                            li
+                                a(href="#") شگفت انگیز ها
+                            li
+                                a(href="#") وبلاگ
+                            li
+                                a(href="#") خبرنامه
+                    div.icons
+                        i.fa-solid.fa-search
+                        i.fa-solid.fa-shopping-bag
+
+            section#home
+                div#slideshow
+                    ul.bxslider
+                        li
+                            img(src="images/slider1.jpg" alt="Slider")
+                        li
+                            img(src="images/slider2.jpg" alt="Slider")
+                .container-box
+                    div.box-wrapper
+                        div#txt-slideshow
+                            h4 فروش تا 30% تخفیف
+                            h1 سری های اپل واچ
+                            p لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                            | از صنعت چاپ
+                            div
+                                a(href="#").btn-shop اکنون خرید کنید
+                                    i.fa-solid.fa-arrow-left
+                        div
+
+
+
+            section#category
+                .container
+                    div.title
+                        //i.fa-solid.fa-star
+                        h3 دسته بندی محصولات
+                    div#category-box
+                        article.categories
+                            img(src="images/iphone-11.jpg" alt="iphone 11")
+                            p iPhone
+                        article.categories
+                            img(src="images/mini-speaker.jpg" alt="iphone 11")
+                            p Mini speakers
+                        article.categories
+                            img(src="images/tablet-white.webp" alt="iphone 11")
+                            p Tablets
+                        article.categories
+                            img(src="images/headphones.webp" alt="iphone 11")
+                            p Headphones
+                        article.categories
+                            img(src="images/laptop.webp" alt="iphone 11")
+                            p Laptop
+                        article.categories
+                            img(src="images/airpods.webp" alt="iphone 11")
+                            p Accessories
+
+
+            section#amazings
+                .container
+                    div#pro-box
+                        article.amazing-things
+                            .banner-wrapper
+                                a(href="#")
+                                    img(src="images/sub-banner-1.jpg")
+                            .banner-content
+                                p دوربین هوشمند امنیتی
+                                h3 فقط از 10 میلیون ریال شروع می شود
+                                div
+                                    a(href="#").btn-shop اکنون خرید کنید
+                                        i.fa-solid.fa-arrow-left
+                        article.amazing-things
+                            .banner-wrapper
+                                a(href="#")
+                                    img(src="images/sub-banner-2.jpg")
+                            .banner-content
+                                p سرگرمی و بازی
+                                h3 فقط از 10 میلیون ریال شروع می شود عجله کنید!
+                                div
+                                    a(href="#").btn-shop اکنون خرید کنید
+                                        i.fa-solid.fa-arrow-left
+
+            section#best-selling
+                .container
+                    div.title
+                        //i.fa-solid.fa-star
+                        h3 محصولات پر فروش
+                    div#b-sell-box
+                        article.b-sell
+                            a(href="#")
+                                img(src="images/charger.webp" alt="sofa charger")
+                                img(src="images/cable.webp" alt="cable charger" class="img-hover")
+
+                            ul.btn-like
+                                li
+                                    a(href="#")
+                                        i.fa-solid.fa-shopping-bag
+                                li
+                                    a(href="#")
+                                        i.fa-solid.fa-heart
+                                li
+                                    a(href="#")
+                                        i.fa-solid.fa-signal
+                            h4 شارژر DroSafe
+                            p 850 هزار ریال
+
+                        article.b-sell
+                            a(href="#")
+                                img(src="images/home-entertainment.webp" alt="home entertainment")
+                                img(src="images/iphone-11.jpg" alt="sofa charger" class="img-hover")
+
+                            ul.btn-like
+                                li
+                                    a(href="#")
+                                        i.fa-solid.fa-shopping-bag
+                                li
+                                    a(href="#")
+                                        i.fa-solid.fa-heart
+                                li
+                                    a(href="#")
+                                        i.fa-solid.fa-signal
+                            h4 تفریحات خانگی
+                            p 850 هزار ریال
+
+                        article.b-sell
+                            a(href="#")
+                                img(src="images/airpods.webp" alt="sofa charger")
+                                img(src="images/airpods.webp" alt="sofa charger" class="img-hover")
+
+                            ul.btn-like
+                                li
+                                    a(href="#")
+                                        i.fa-solid.fa-shopping-bag
+                                li
+                                    a(href="#")
+                                        i.fa-solid.fa-heart
+                                li
+                                    a(href="#")
+                                        i.fa-solid.fa-signal
+                            h4 DrouPods Pro سفید
+                            p 850 هزار ریال
+
+                        article.b-sell
+                            a(href="#")
+                                img(src="images/laptop.webp" alt="sofa charger")
+                                img(src="images/laptop.webp" alt="sofa charger" class="img-hover")
+
+                            ul.btn-like
+                                li
+                                    a(href="#")
+                                        i.fa-solid.fa-shopping-bag
+                                li
+                                    a(href="#")
+                                        i.fa-solid.fa-heart
+                                li
+                                    a(href="#")
+                                        i.fa-solid.fa-signal
+                            h4 UPad Pro رنگ مشکی
+                            p 850 هزار ریال
+
+                        article.b-sell
+                            a(href="#")
+                                img(src="images/mini-speaker.jpg" alt="sofa charger")
+                                img(src="images/mini-speaker.jpg" alt="sofa charger" class="img-hover")
+
+                            ul.btn-like
+                                li
+                                    a(href="#")
+                                        i.fa-solid.fa-shopping-bag
+                                li
+                                    a(href="#")
+                                        i.fa-solid.fa-heart
+                                li
+                                    a(href="#")
+                                        i.fa-solid.fa-signal
+                            h4 هوم پاد مینی 2022
+                            p 850 هزار ریال
+
+
+
+
+
+
+
+
+
+
+
+
+
+    script(src="scripts/slick.min.js")
+    script(src="scripts/aos.js")
+    script(src="scripts/main.js")
+    script(src="scripts/jquery-3.7.0.min.js")
+    script(src="scripts/jquery.bxslider.min.js")
+    script(src="scripts/theScripts.js")

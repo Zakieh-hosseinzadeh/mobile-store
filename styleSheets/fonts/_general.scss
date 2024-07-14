@@ -1,0 +1,44 @@
+
+* {
+  box-sizing: border-box;
+  @include fontFamily();
+}
+
+body {
+  direction: rtl;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+html,body{
+  scroll-behavior: smooth;
+}
+a#go-to-top:link,
+a#go-to-top:visited {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  background-color: $seconderyColor;
+  box-shadow: 0 0 23px 5px rgb(255 255 255 / 8%);
+  text-decoration: none;
+  position: fixed;
+  bottom: 20px;
+  /*left: 20px;*/
+  margin-right: 20px;
+  z-index: 20;
+  transition: all 0.3s;
+}
+
+a#go-to-top:hover {
+  background-color: $primaryColor;
+}
