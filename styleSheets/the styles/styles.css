@@ -152,7 +152,7 @@ a#go-to-top:hover {
 #top-header #menu li a:hover {
   color: #232c35;
 }
-#top-header #menu li :hover {
+#top-header #menu li a:hover {
   background-color: #a5bbcb;
   padding: 7px;
   border-radius: 25px;

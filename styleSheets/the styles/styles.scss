@@ -56,7 +56,7 @@ a#go-to-top:hover {
     color: $seconderyColor;
   }
 
-  #menu li :hover {
+  #menu li a:hover {
     background-color: $lightblue;
     padding: 7px;
     border-radius: 25px;
