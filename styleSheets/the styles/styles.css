@@ -251,6 +251,12 @@ a#go-to-top:hover {
   height: 22px;
   border-radius: 50%;
 }
+@media screen and (max-width: 768px) {
+  #home #slideshow .bx-wrapper .bx-pager.bx-default-pager a {
+    width: 15px;
+    height: 15px;
+  }
+}
 #home #slideshow .bx-controls-direction {
   display: none;
 }
@@ -473,6 +479,12 @@ a#go-to-top:hover {
 }
 .b-sell-box .slick-slide img {
   display: inline-block;
+}
+.b-sell-box .slick-list {
+  padding: 15px;
+}
+.b-sell-box .slick-slide {
+  margin: 0 10px;
 }
 .b-sell-box .b-sell {
   flex: 1;
