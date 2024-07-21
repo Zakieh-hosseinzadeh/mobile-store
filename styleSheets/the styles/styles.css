@@ -63,11 +63,6 @@ html, body {
     width: 98%;
   }
 }
-@media screen and (max-width: 576px) {
-  .container {
-    width: 100%;
-  }
-}
 
 .btn-shop {
   display: inline-block;
@@ -555,6 +550,52 @@ a#go-to-top:hover {
 
 .btn-like a:hover {
   background-color: #7774ff;
+}
+
+.slick-next:link,
+.slick-prev:link,
+.slick-next:visited,
+.slick-prev:visited,
+.slick-next:focus,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-prev:hover {
+  border-radius: 50%;
+  color: white !important;
+  padding: 10px;
+}
+
+.slick-prev, .slick-next {
+  width: 40px !important;
+  height: 40px !important;
+  background: #232c35 !important;
+  color: white !important;
+  border-radius: 50%;
+  padding: 10px !important;
+}
+
+.slick-next {
+  right: -50px !important;
+}
+
+.slick-prev {
+  left: -50px !important;
+}
+
+.slick-next:before {
+  content: "<" !important;
+}
+
+.slick-prev:before {
+  content: ">" !important;
+}
+
+.slick-dots li button:before {
+  font-size: 70px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #232c35;
 }
 
 #ads-banner {

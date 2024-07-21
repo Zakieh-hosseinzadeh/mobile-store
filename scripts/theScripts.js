@@ -18,6 +18,7 @@ $('.b-sell-box').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     dots: false,
+    control: true,
     responsive: [
         {
             breakpoint: 1024,
@@ -57,8 +58,8 @@ $('.menu-pup a').click(function () {
 
     if (className === 'all') {
         $('.popular').fadeIn(500)
-    }else{
-        $('.popular').hide().filter('.'+className).fadeIn(500)
+    } else {
+        $('.popular').hide().filter('.' + className).fadeIn(500)
 
     }
     return false;
