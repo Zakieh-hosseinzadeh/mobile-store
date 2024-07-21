@@ -2,7 +2,10 @@ doctype html
 html(lang="en")
     head
         meta(charset="UTF-8")
-        title welcome to my site
+        meta(name="viewport" content="width=device-width , initial-scale=1.0")
+
+        title "به سایت ما خوش آمدید"
+
         link(href="styleSheets/the styles/styles.css" rel="stylesheet")
         link(href="styleSheets/components/normalize.css" rel="stylesheet")
         link(href="styleSheets/components/fontawesome.css" rel="stylesheet")
@@ -12,9 +15,38 @@ html(lang="en")
         link(href="styleSheets/components/aos.css" rel="stylesheet")
         link(href="styleSheets/components/slick.css" rel="stylesheet")
         link(href="styleSheets/components/slick-theme.css" rel="stylesheet")
+
+
+
     body
+
         a#go-to-top(href="#")
             i.fa-solid.fa-arrow-up
+        section#menu-wrapper
+
+            img(src="" id="menu-logo" alt="لوگوی سایت")
+            i#remove-menu.fa-solid.fa-times
+
+            div#menu-box
+                div.menu-hov
+                    i.fa-solid.fa-circle-chevron-left
+                    a(href="#") صفحه اصلی
+
+                div.menu-hov
+                    i.fa-solid.fa-circle-chevron-left
+                    a(href="#") دسته بندی محصولات
+
+                div.menu-hov
+                    i.fa-solid.fa-circle-chevron-left
+                    a(href="#")  شگفت انگیز ها
+
+                div.menu-hov
+                    i.fa-solid.fa-circle-chevron-left
+                    a(href="#") وبلاگ
+
+                div.menu-hov
+                    i.fa-solid.fa-circle-chevron-left
+                    a(href="#")  خبرنامه
         main
             div#header
                 .container
@@ -24,18 +56,20 @@ html(lang="en")
                         nav.menu
                             ul
                                 li
-                                    a(href="#") خانه
+                                    a(href="#home") خانه
                                 li
-                                    a(href="#") دسته بندی محصولات
+                                    a(href="#category") دسته بندی محصولات
                                 li
-                                    a(href="#") شگفت انگیز ها
+                                    a(href="#amazings") شگفت انگیز ها
                                 li
-                                    a(href="#") وبلاگ
+                                    a(href="#blogs") وبلاگ
                                 li
-                                    a(href="#") خبرنامه
+                                    a(href="#news") خبرنامه
                         div.icons
                             i.fa-solid.fa-search
                             i.fa-solid.fa-shopping-bag
+                            a(href="#")#show-menu
+                                i.fa-solid.fa-bars
 
             section#home
                 div#slideshow
@@ -47,11 +81,11 @@ html(lang="en")
                 .container-box
                     div.box-wrapper
                         div#txt-slideshow
-                            h4 فروش تا 30% تخفیف
-                            h1 سری های اپل واچ
-                            p لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                            h4(data-aos="fade-up") فروش تا 30% تخفیف
+                            h1(data-aos="fade-up") سری های اپل واچ
+                            p(data-aos="fade-up") لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
                             | از صنعت چاپ
-                            div
+                            div(data-aos="fade-up")
                                 a(href="#").btn-shop اکنون خرید کنید
                                     i.fa-solid.fa-arrow-left
                         div
@@ -112,7 +146,7 @@ html(lang="en")
                     div.title
                         h3 محصولات پر فروش
                     div.b-sell-box
-                        article.b-sell
+                        article( data-aos="fade-up" data-aos-anchor-placement="center-bottom").b-sell
                             a(href="#")
                                 img(src="images/charger.webp" alt="sofa charger")
                                 img(src="images/cable.webp" alt="cable charger" class="img-hover")
@@ -130,7 +164,7 @@ html(lang="en")
                             h4 شارژر DroSafe
                             p 850 هزار ریال
 
-                        article.b-sell
+                        article(data-aos="fade-up" data-aos-anchor-placement="center-bottom").b-sell
                             a(href="#")
                                 img(src="images/home-entertainment.webp" alt="home entertainment")
                                 img(src="images/iphone-11.jpg" alt="sofa charger" class="img-hover")
@@ -148,7 +182,7 @@ html(lang="en")
                             h4 تفریحات خانگی
                             p 850 هزار ریال
 
-                        article.b-sell
+                        article(data-aos="fade-up" data-aos-anchor-placement="center-bottom").b-sell
                             a(href="#")
                                 img(src="images/airpods.webp" alt="sofa charger")
                                 img(src="images/iphone-13.jpg" alt="sofa charger" class="img-hover")
@@ -166,7 +200,7 @@ html(lang="en")
                             h4 DrouPods Pro سفید
                             p 850 هزار ریال
 
-                        article.b-sell
+                        article(data-aos="fade-up" data-aos-anchor-placement="center-bottom").b-sell
                             a(href="#")
                                 img(src="images/laptop.webp" alt="sofa charger")
                                 img(src="images/tablet.webp" alt="sofa charger" class="img-hover")
@@ -184,7 +218,7 @@ html(lang="en")
                             h4 UPad Pro رنگ مشکی
                             p 850 هزار ریال
 
-                        article.b-sell
+                        article(data-aos="fade-up" data-aos-anchor-placement="center-bottom").b-sell
                             a(href="#")
                                 img(src="images/mini-speaker.jpg" alt="sofa charger")
                                 img(src="images/watch.webp" alt="sofa charger" class="img-hover")
@@ -200,6 +234,24 @@ html(lang="en")
                                     a(href="#")
                                         i.fa-solid.fa-signal
                             h4 هوم پاد مینی 2022
+                            p 850 هزار ریال
+
+                        article(data-aos="fade-up" data-aos-anchor-placement="center-bottom").b-sell
+                            a(href="#")
+                                img(src="images/airpods.webp" alt="sofa charger")
+                                img(src="images/iphone-13.jpg" alt="sofa charger" class="img-hover")
+
+                            ul.btn-like
+                                li
+                                    a(href="#")
+                                        i.fa-solid.fa-shopping-bag
+                                li
+                                    a(href="#")
+                                        i.fa-solid.fa-heart
+                                li
+                                    a(href="#")
+                                        i.fa-solid.fa-signal
+                            h4 DrouPods Pro سفید
                             p 850 هزار ریال
 
             section#ads-banner
@@ -227,16 +279,18 @@ html(lang="en")
                 .container
                     div.title
                         h3 محبوب ترین ها
-                        nav.menu
+                        nav.menu-pup
                             ul
                                 li
-                                    a(href="#") آیفون
+                                    a(href="#").all.active همه
                                 li
-                                    a(href="#") لپ تاپ
+                                    a(href="#").iphone آیفون
                                 li
-                                    a(href="#") تجهیزات جانبی
+                                    a(href="#").laptop لپ تاپ
+                                li
+                                    a(href="#").things تجهیزات جانبی
                     div#popular-box
-                        article.popular
+                        article(data-aos="flip-right" data-aos-duration="1000").popular.iphone
                             a(href="#")
                                 img(src="images/charger.webp" alt="sofa charger")
                                 img(src="images/cable.webp" alt="cable charger" class="img-hover")
@@ -254,7 +308,7 @@ html(lang="en")
                             h4 شارژر DroSafe
                             p 850 هزار ریال
 
-                        article.popular
+                        article(data-aos="flip-right" data-aos-duration="1000").popular.laptop.iphone
                             a(href="#")
                                 img(src="images/home-entertainment.webp" alt="home entertainment")
                                 img(src="images/iphone-11.jpg" alt="sofa charger" class="img-hover")
@@ -272,7 +326,7 @@ html(lang="en")
                             h4 تفریحات خانگی
                             p 850 هزار ریال
 
-                        article.popular
+                        article(data-aos="flip-right" data-aos-duration="1000").popular.laptop.things
                             a(href="#")
                                 img(src="images/airpods.webp" alt="sofa charger")
                                 img(src="images/iphone-13.jpg" alt="sofa charger" class="img-hover")
@@ -290,7 +344,7 @@ html(lang="en")
                             h4 DrouPods Pro سفید
                             p 850 هزار ریال
 
-                        article.popular
+                        article(data-aos="flip-right" data-aos-duration="1000").popular.iphone
                             a(href="#")
                                 img(src="images/laptop.webp" alt="sofa charger")
                                 img(src="images/tablet.webp" alt="sofa charger" class="img-hover")
@@ -308,7 +362,7 @@ html(lang="en")
                             h4 UPad Pro رنگ مشکی
                             p 850 هزار ریال
 
-                        article.popular
+                        article(data-aos="flip-right" data-aos-duration="1000").popular.things
                             a(href="#")
                                 img(src="images/mini-speaker.jpg" alt="sofa charger")
                                 img(src="images/watch.webp" alt="sofa charger" class="img-hover")
@@ -328,18 +382,7 @@ html(lang="en")
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-                        article.popular
+                        article(data-aos="flip-right" data-aos-duration="1000").popular
                             a(href="#")
                                 img(src="images/airpods.webp" alt="sofa charger")
                                 img(src="images/iphone-13.jpg" alt="sofa charger" class="img-hover")
@@ -357,7 +400,7 @@ html(lang="en")
                             h4 DrouPods Pro سفید
                             p 850 هزار ریال
 
-                        article.popular
+                        article(data-aos="flip-right" data-aos-duration="1000").popular
                             a(href="#")
                                 img(src="images/laptop.webp" alt="sofa charger")
                                 img(src="images/tablet.webp" alt="sofa charger" class="img-hover")
@@ -375,7 +418,7 @@ html(lang="en")
                             h4 UPad Pro رنگ مشکی
                             p 850 هزار ریال
 
-                        article.popular
+                        article(data-aos="flip-right" data-aos-duration="1000").popular
                             a(href="#")
                                 img(src="images/mini-speaker.jpg" alt="sofa charger")
                                 img(src="images/watch.webp" alt="sofa charger" class="img-hover")
@@ -392,19 +435,6 @@ html(lang="en")
                                         i.fa-solid.fa-signal
                             h4 هوم پاد مینی 2022
                             p 850 هزار ریال
-
-
-
-
-
-
-
-
-
-
-
-
-
 
             section#news
                 .container
@@ -478,58 +508,63 @@ html(lang="en")
                                     a(href="#") lorem-ipsom@gmail.com
                         article.foot
                             h3 خدمات مشتری
-                                ul.lists
-                                    li
-                                        i.fa-solid.fa-angle-left
-                                        a(href="#") پشتیبانی محصول
-                                    li
-                                        i.fa-solid.fa-angle-left
-                                        a(href="#") مرکز کمک
-                                    li
-                                        i.fa-solid.fa-angle-left
-                                        a(href="#") بازخرید کوپن
-                                    li
-                                        i.fa-solid.fa-angle-left
-                                        a(href="#") تماس با ما
-                                    li
-                                        i.fa-solid.fa-angle-left
-                                        a(href="#") سیاست ها و قوانین
+                            ul.lists
+                                li
+                                    i.fa-solid.fa-angle-left
+                                    a(href="#") پشتیبانی محصول
+                                li
+                                    i.fa-solid.fa-angle-left
+                                    a(href="#") مرکز کمک
+                                li
+                                    i.fa-solid.fa-angle-left
+                                    a(href="#") بازخرید کوپن
+                                li
+                                    i.fa-solid.fa-angle-left
+                                    a(href="#") تماس با ما
+                                li
+                                    i.fa-solid.fa-angle-left
+                                    a(href="#") سیاست ها و قوانین
                         article.foot
                             h3 خدمات مشتری
-                                ul.lists
-                                    li
-                                        i.fa-solid.fa-angle-left
-                                        a(href="#") پشتیبانی محصول
-                                    li
-                                        i.fa-solid.fa-angle-left
-                                        a(href="#") مرکز کمک
-                                    li
-                                        i.fa-solid.fa-angle-left
-                                        a(href="#") بازخرید کوپن
-                                    li
-                                        i.fa-solid.fa-angle-left
-                                        a(href="#") تماس با ما
-                                    li
-                                        i.fa-solid.fa-angle-left
-                                        a(href="#") سیاست ها و قوانین
+                            ul.lists
+                                li
+                                    i.fa-solid.fa-angle-left
+                                    a(href="#") پشتیبانی محصول
+                                li
+                                    i.fa-solid.fa-angle-left
+                                    a(href="#") مرکز کمک
+                                li
+                                    i.fa-solid.fa-angle-left
+                                    a(href="#") بازخرید کوپن
+                                li
+                                    i.fa-solid.fa-angle-left
+                                    a(href="#") تماس با ما
+                                li
+                                    i.fa-solid.fa-angle-left
+                                    a(href="#") سیاست ها و قوانین
                         article.foot
                             h3 برنامه ما را دانلود کنید
                             p برنامه ما را دانلود کنید و 15٪ تخفیف اضافی در اولین سفارش خود دریافت کنید..!
+                            div#app-wrapper
+                                a(href="#")
+                                    img(src="images/app-store.webp" alt="app-store")
+                                a(href="#")
+                                    img(src="images/google-play.webp" alt="google-play")
             section#copy-right
                 .container
                     div#copy
-                        p تمامی حقوق محفوط و متعلق به وبسایت Avita میباشد.CopyRight
+                        p تمامی حقوق محفوط و متعلق به وبسایت ... میباشد.CopyRight
                             i.fa-solid.fa-copyright
-                            |۲۰۲۲
+                            | ۲۰۲۲
 
                         p طراحی شده توسط
                             strong  زکیه حسین زاده
                             |  با
                             i.fa-solid.fa-brain
 
+    script(src="scripts/jquery-3.7.0.min.js")
+    script(src="scripts/jquery.bxslider.min.js")
     script(src="scripts/slick.min.js")
     script(src="scripts/aos.js")
     script(src="scripts/main.js")
-    script(src="scripts/jquery-3.7.0.min.js")
-    script(src="scripts/jquery.bxslider.min.js")
     script(src="scripts/theScripts.js")

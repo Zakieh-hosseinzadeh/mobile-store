@@ -26,6 +26,15 @@ html, body {
   width: 85%;
   margin: 0 auto;
   padding: $gap;
+  @media screen and (max-width: 992px) {
+    width: 95%;
+  }
+  @media screen and (max-width: 768px) {
+    width: 98%;
+  }
+  @media screen and (max-width:576px){
+    width: 100%;
+  }
 }
 
 .btn-shop {
@@ -36,7 +45,11 @@ html, body {
   vertical-align: middle;
   color: #fff;
   @include transition();
-
+  cursor: pointer;
+  
+  @media screen and (max-width: 576px){
+    padding:10px ;
+  }
   i.fa-arrow-left {
     vertical-align: middle;
     margin-right: 4px;
@@ -50,16 +63,12 @@ html, body {
 .title {
   @include fontPinar();
   margin: 20px 0;
+
   h3 {
     margin: 0;
     font-size: 25px;
     display: inline-block;
   }
-
-  //.fa-star {
-  //  color: $primaryColor;
-  //  margin-left: 10px;
-  //}
 }
 
 .title h3::before,
@@ -70,6 +79,14 @@ html, body {
   background-color: $primaryColor;
   display: inline-block;
   vertical-align: 2px;
+
+
+}
+@media screen and (max-width: 576px) {
+  .title h3::before,
+  .title h3::after {
+    width: 15px;
+  }
 }
 
 .title h3::before {
@@ -103,11 +120,18 @@ html, body {
   padding: 7px;
   border-radius: 25px;
 }
-.active-menu{
+@media screen and (max-width: 768px){
+  .menu{
+    display: none;
+  }
+}
+
+.active-menu {
   background-color: $lightblue;
   padding: 7px;
   border-radius: 25px;
 }
+
 .img-hover {
   width: 100%;
   position: absolute;
@@ -115,25 +139,10 @@ html, body {
   opacity: 0;
   @include transition();
 }
+
 .popular:hover > a > .img-hover,
 .b-sell:hover > a > .img-hover {
   opacity: 1;
   transform: scale(1.05);
-}
-
-#copy-right{
-    background-color: $lightgray;
-
-  #copy {
-    text-align: center;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .fa-brain {
-    color: green;
-    vertical-align: middle;
-  }
 }
 

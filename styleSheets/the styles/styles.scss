@@ -29,6 +29,13 @@ a#go-to-top:hover {
   font-size: 20px;
 }
 
+//#header{
+//  position: sticky;
+//  top: 0;
+//  left: 0;
+//  background-color: rgba(232, 232, 232, 0.89);
+//  z-index: 30;
+//}
 
 #top-header {
   display: flex;
@@ -73,7 +80,11 @@ a#go-to-top:hover {
       border: 0;
       margin: 0;
     }
-
+    .bx-wrapper .bx-pager.bx-default-pager a{
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+    }
     .bx-controls-direction {
       display: none;
     }
@@ -97,18 +108,36 @@ a#go-to-top:hover {
     width: 80%;
     margin: 0 auto;
     position: relative;
+    @media screen and (max-width: 992px) {
+      width: 100%;
+    }
   }
 
   .box-wrapper {
     position: absolute;
     right: 0;
     bottom: 160px;
+    @media screen and (max-width: 992px) {
+      bottom: 80px;
+      margin-right: $gap;
+    }
+    @media screen and (max-width: 768px) {
+      bottom: 20px;
+      text-align: center;
+    }
+    @media screen and (max-width: 576px){
+      margin-right:65px;
+    }
 
     #txt-slideshow {
 
       h1 {
         font-size: 3.5em;
         margin: 20px 0;
+        @media screen and (max-width: 768px) {
+          font-size: 2.8rem;
+        }
+
       }
 
       h4 {
@@ -119,13 +148,32 @@ a#go-to-top:hover {
 
       div {
         margin-top: 30px;
+        @media screen and (max-width: 768px) {
+          margin-top: 15px;
+        }
       }
 
+      @media screen and (max-width: 576px) {
+        h1 {
+          font-size: 1.5rem;
+          margin: 0;
+        }
+        h4 {
+          font-size: 18px;
+        }
+        p{
+          line-height: 0.5;
+        }
+
+
+      }
 
     }
 
 
   }
+
+
 }
 
 //section home
@@ -151,6 +199,15 @@ a#go-to-top:hover {
       box-shadow: $shadow;
       cursor: pointer;
     }
+
+    @media screen and (max-width: 576px) {
+      flex-wrap: wrap;
+      gap: $gap;
+
+      .categories {
+        flex-basis: 25%;
+      }
+    }
   }
 
   .categories img {
@@ -171,12 +228,19 @@ a#go-to-top:hover {
     display: flex;
     padding: 15px;
     column-gap: $gap;
+    @media screen and (max-width: 576px) {
+      flex-wrap: wrap;
+      row-gap: $gap*2;
+    }
 
     .amazing-things {
       flex: 1;
       position: relative;
       overflow: hidden;
       cursor: pointer;
+      @media screen and (max-width: 576px) {
+        flex-basis: 52%;
+      }
     }
 
     .amazing-things img {
@@ -190,7 +254,25 @@ a#go-to-top:hover {
       top: 15px;
       right: 105px;
       text-align: center;
-
+      @media screen and (max-width: 1200px) {
+        top: 8px;
+        right: 60px;
+      }
+      @media screen and (max-width: 992px) {
+        right: 50px;
+        h3 {
+          margin: 8px 0;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        right: 15px;
+        top: 30px;
+      }
+      @media screen and (max-width: 576px) {
+        position: relative !important;
+        top: 2px !important;
+        transform: translate(0) !important;
+      }
     }
 
 
@@ -228,13 +310,18 @@ a#go-to-top:hover {
     width: 100%;
     position: absolute;
     left: 0;
+
     opacity: 0;
     @include transition();
   }
 
+  .slick-slide img {
+    display: inline-block;
+  }
+
   .b-sell {
     flex: 1;
-    transition: all 0.5s;
+    @include transition() ;
     box-shadow: $shadow;
     text-align: center;
     cursor: pointer;
@@ -304,6 +391,12 @@ a#go-to-top:hover {
 
   #img-banner img {
     width: 100%;
+
+
+    @media screen and (max-width: 768px) {
+      height: 360px;
+      object-fit: cover;
+    }
   }
 
   .container-content {
@@ -312,6 +405,26 @@ a#go-to-top:hover {
     position: absolute;
     left: 15%;
     bottom: 10%;
+
+    @media screen and (max-width: 1200px) {
+      bottom: 15px;
+    }
+    @media screen and (max-width: 992px) {
+      bottom: 20px;
+      left: 30px;
+      width: 40%;
+
+      h2 {
+        margin: 20px 0;
+      }
+      h3 {
+        margin: 10px 0;
+      }
+
+    }
+    @media screen and (max-width: 576px) {
+      width: 90%;
+    }
   }
 
   .container-content h4 {
@@ -339,6 +452,13 @@ a#go-to-top:hover {
     display: flex;
     column-gap: $gap;
     margin: 25px 0 65px 0;
+
+    @media screen and (max-width: 1200px) {
+      margin: 25px 0 35px 0;
+    }
+    @media screen and (max-width: 992px) {
+      margin: 10px 0 15px 0;
+    }
   }
 
   .time {
@@ -359,18 +479,43 @@ a#go-to-top:hover {
     justify-content: space-between;
   }
 
-  .menu-pro {
+  .menu-pup ul {
+    padding: 0;
     display: flex;
+    justify-content: space-around;
+    column-gap: $gap*2;
+
   }
 
-  .menu-pro li {
-    flex: 1;
+  .menu-pup li a {
+    color: $primaryColor;
+    @include transition();
   }
+
+  .menu-pup li a:hover {
+    color: $seconderyColor;
+  }
+
+  .menu-pup li a:hover,
+  .menu-pup a.active {
+    background-color: $lightblue;
+    padding: 7px;
+    border-radius: 25px;
+  }
+
 
   #popular-box {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: $gap*2;
+    @media screen and (max-width: 768px) {
+
+
+    }
+    @media screen and (max-width: 576px) {
+      grid-template-columns: repeat(1, 1fr);
+
+    }
   }
 
   .popular {
@@ -388,13 +533,20 @@ a#go-to-top:hover {
   .popular a {
     position: relative;
   }
+
+  .popular p {
+    color: $primaryColor;
+  }
 }
 
 //section popular products
 #news {
 
   background-color: $lightgray;
-  padding: 70px 0;
+  padding: 40px 0;
+  @media screen and (max-width: 992px) {
+    padding: 0;
+  }
 
   #news-form {
     width: 50%;
@@ -403,6 +555,9 @@ a#go-to-top:hover {
     @include brRadius();
     padding: 5px;
     box-shadow: $shadow;
+    @media screen and (max-width: 992px) {
+      width: 70%;
+    }
   }
 
   #news-form input {
@@ -427,7 +582,6 @@ a#go-to-top:hover {
 }
 
 #blogs {
-  min-height: 100px;
 
   #blog-box {
     display: flex;
@@ -458,6 +612,20 @@ a#go-to-top:hover {
     margin-left: 5px;
   }
 
+  @media screen and (max-width: 1200px) {
+    .blog p {
+      line-height: 2;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    #blog-box {
+      flex-wrap: wrap;
+    }
+    .blog {
+      flex-basis: 51%;
+    }
+  }
+
 }
 
 //section blog
@@ -484,21 +652,47 @@ a#go-to-top:hover {
 
   #footer-box {
     display: flex;
-    min-height: 100px;
+    gap: $gap;
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+    }
   }
 
   .foot {
     flex: 1;
+
+  }
+
+  @media screen and (max-width: 768px) {
+    .foot {
+      flex-basis: 47%;
+    }
   }
 
   .foot:last-child {
-    flex-grow: 1.3;
+    flex-grow: 1.5;
   }
 
-  .foot p,
-  .foot li {
+  .foot p {
     color: gray;
+    @media screen and (max-width: 992px) {
+      line-height: 2;
+    }
   }
+
+  #app-wrapper {
+    display: flex;
+    column-gap: $gap;
+  }
+
+  #app-wrapper a {
+    box-shadow: $shadow;
+  }
+
+  #app-wrapper img {
+    width: 90%;
+  }
+
 
   .lists li {
     margin: 10px 0;
@@ -517,10 +711,119 @@ a#go-to-top:hover {
     display: inline-block;
     vertical-align: 2px;
   }
+
   .lists a:hover {
-    color:$primaryColor;
+    color: $primaryColor;
   }
 }
+
+#copy-right {
+  background-color: $lightgray;
+
+  #copy {
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .fa-brain {
+    color: green;
+    vertical-align: middle;
+  }
+
+  @media screen and (max-width: 992px) {
+    .container {
+      padding: 0;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #copy {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    p {
+      flex-basis: 52%;
+      margin: 4px 0;
+    }
+  }
+}
+
+
+#menu-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 20;
+  transform: translateY(99%);
+  @include transition();
+}
+
+#menu-wrapper.menu-wrapper-close {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+#menu-box {
+  width: 80%;
+  margin: 7% auto;
+  display: grid;
+  grid-template-columns:repeat(2, 1fr);
+}
+
+.menu-hov {
+  background-color: #cecece;
+  //width: 65%;
+  padding: 25px 15px;
+  margin: 10px;
+  border-radius: 5px;
+  @include transition();
+}
+
+.menu-hov:hover {
+  background-color: $seconderyColor;
+}
+
+#menu-hov-box .menu-hov:nth-child(odd) {
+  margin-right: 33%;
+}
+
+.menu-hov a:link,
+.menu-hov a:visited {
+  text-decoration: none;
+  color: #000;
+  padding-right: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: IRANYekan, Pinar, sans-serif;
+}
+
+.menu-hov:hover a:link,
+.menu-hov:hover a:visited {
+  color: #fff;
+}
+
+.menu-hov > i {
+  font-size: 20px;
+  position: absolute;
+  margin-top: 2px;
+  @include transition();
+}
+
+.menu-hov:hover i {
+
+  color: #fff;
+  margin-right: 10px;
+}
+
+#remove-menu {
+  cursor: pointer;
+  font-size: 25px;
+}
+
 
 
 
