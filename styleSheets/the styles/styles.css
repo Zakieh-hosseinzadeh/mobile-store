@@ -300,7 +300,7 @@ a#go-to-top:hover {
 }
 @media screen and (max-width: 576px) {
   #home .box-wrapper {
-    margin-right: 65px;
+    margin-right: 10px;
   }
 }
 #home .box-wrapper #txt-slideshow h1 {
@@ -964,6 +964,17 @@ a#go-to-top:hover {
   gap: 30px;
   grid-template-columns: repeat(2, 1fr);
 }
+@media screen and (max-width: 992px) {
+  #menu-box {
+    width: 66%;
+  }
+}
+@media screen and (max-width: 576px) {
+  #menu-box {
+    grid-template-columns: auto;
+    width: 50%;
+  }
+}
 
 .menu-hov {
   background-color: #cecece;
@@ -973,6 +984,11 @@ a#go-to-top:hover {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
+}
+@media screen and (max-width: 992px) {
+  .menu-hov {
+    padding: 12px;
+  }
 }
 
 .menu-hov:hover {

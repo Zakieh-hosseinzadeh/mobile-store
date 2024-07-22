@@ -132,7 +132,7 @@ a#go-to-top:hover {
       text-align: center;
     }
     @media screen and (max-width: 576px) {
-      margin-right: 65px;
+      margin-right: 10px;
     }
 
     #txt-slideshow {
@@ -826,6 +826,13 @@ a#go-to-top:hover {
   display: grid;
   gap: $gap*2;
   grid-template-columns:repeat(2, 1fr);
+  @media screen and (max-width: 992px){
+    width: 66%;
+  }
+  @media screen and (max-width: 576px){
+    grid-template-columns: auto;
+    width: 50%;
+  }
 }
 
 .menu-hov {
@@ -833,6 +840,9 @@ a#go-to-top:hover {
   padding: 20px;
   border-radius: 5px;
   @include transition();
+  @media screen and (max-width: 992px){
+    padding: 12px;
+  }
 }
 
 .menu-hov:hover {
