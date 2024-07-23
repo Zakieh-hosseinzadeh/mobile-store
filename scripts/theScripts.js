@@ -77,9 +77,19 @@ removeMenu.onclick = function () {
 }
 
 
-// $(document).ready(function() {
-//     $("#toggle").click(function() {});
-// });
+
+
+
+const toggleButton = document.getElementById('themeToggle');
+const body = document.body;
+toggleButton.addEventListener('click', function () {
+    body.classList.toggle('dark-mode');
+    body.classList.toggle('light-theme');
+    toggleButton.classList.toggle('dark-mode');
+    // toggleButton.classList.toggle('light-theme');
+
+});
+
 
 AOS.init();
 

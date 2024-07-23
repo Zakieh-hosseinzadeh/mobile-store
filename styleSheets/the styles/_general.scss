@@ -59,6 +59,7 @@ html, body {
 }
 
 .title {
+  color: $text;
   @include fontPinar();
   margin: 20px 0;
 

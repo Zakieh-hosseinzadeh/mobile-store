@@ -24,7 +24,7 @@
   font-weight: bold;
   src: url("../fonts/pinar/Pinar-Bold.ttf") format("truetype"), url("../fonts/pinar/Pinar-Bold.woff2") format("woff");
 }
-.dark {
+.dark-mode {
   /*#171717*/
 }
 
@@ -96,6 +96,7 @@ html, body {
 }
 
 .title {
+  color: #000;
   font-family: "Pinar", "IRANYekan", sans-serif;
   margin: 20px 0;
 }
@@ -217,7 +218,7 @@ html, body {
   font-weight: bold;
   src: url("../fonts/pinar/Pinar-Bold.ttf") format("truetype"), url("../fonts/pinar/Pinar-Bold.woff2") format("woff");
 }
-.dark {
+.dark-mode {
   /*#171717*/
 }
 
@@ -397,6 +398,7 @@ a#go-to-top:hover {
 }
 
 #top-header {
+  color: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -431,6 +433,7 @@ a#go-to-top:hover {
 }
 
 #home {
+  color: #000;
   position: relative;
 }
 #home #slideshow {
@@ -538,6 +541,9 @@ a#go-to-top:hover {
   }
 }
 
+#category {
+  color: #000;
+}
 #category #category-box {
   display: flex;
   justify-content: center;
@@ -581,6 +587,9 @@ a#go-to-top:hover {
   -ms-transform: scale(1.05);
 }
 
+#amazings {
+  color: #000;
+}
 #amazings #pro-box {
   display: flex;
   padding: 15px;
@@ -660,6 +669,7 @@ a#go-to-top:hover {
 }
 
 .b-sell-box {
+  color: #000;
   display: flex;
   flex-wrap: wrap;
   column-gap: 15px;
@@ -900,6 +910,9 @@ a#go-to-top:hover {
   flex-direction: column;
 }
 
+#popular-products {
+  color: #000;
+}
 #popular-products .title {
   display: flex;
   justify-content: space-between;
@@ -965,6 +978,7 @@ a#go-to-top:hover {
 }
 
 #news {
+  color: #000;
   background-color: rgba(232, 232, 232, 0.368627451);
   padding: 40px 0;
 }
@@ -1005,6 +1019,9 @@ a#go-to-top:hover {
   color: gray;
 }
 
+#blogs {
+  color: #000;
+}
 #blogs #blog-box {
   display: flex;
   column-gap: 15px;
@@ -1061,6 +1078,9 @@ a#go-to-top:hover {
   width: 60%;
 }
 
+#footer {
+  color: #000;
+}
 #footer #footer-box {
   display: flex;
   gap: 15px;
@@ -1151,6 +1171,7 @@ a#go-to-top:hover {
 }
 
 #menu-wrapper {
+  color: #000;
   width: 100%;
   height: 100%;
   background-color: white;
@@ -1166,6 +1187,11 @@ a#go-to-top:hover {
 }
 #menu-wrapper #menu-logo {
   width: 200px;
+}
+@media screen and (max-width: 768px) {
+  #menu-wrapper #menu-logo {
+    width: 100px;
+  }
 }
 
 #menu-wrapper.menu-wrapper-close {

@@ -36,6 +36,7 @@ a#go-to-top:hover {
 //}
 
 #top-header {
+  color: $text;
   display: flex;
   justify-content: space-between;
   //padding: 10px 30px;
@@ -43,6 +44,7 @@ a#go-to-top:hover {
 
   #logo img {
     width: 100px;
+
   }
 
   @media screen and (max-width: 992px) {
@@ -75,6 +77,7 @@ a#go-to-top:hover {
 //top header
 
 #home {
+  color: $text;
   position: relative;
 
   #slideshow {
@@ -196,7 +199,7 @@ a#go-to-top:hover {
 //section home
 
 #category {
-
+  color: $text;
 
   #category-box {
     display: flex;
@@ -240,7 +243,7 @@ a#go-to-top:hover {
 //section category
 
 #amazings {
-
+  color: $text;
   #pro-box {
     display: flex;
     padding: 15px;
@@ -315,6 +318,7 @@ a#go-to-top:hover {
 
 
 .b-sell-box {
+  color: $text;
   display: flex;
   flex-wrap: wrap;
   column-gap: $gap;
@@ -549,6 +553,7 @@ a#go-to-top:hover {
 
 //section ads banner
 #popular-products {
+  color: $text;
   .title {
     display: flex;
     justify-content: space-between;
@@ -622,7 +627,7 @@ a#go-to-top:hover {
 
 //section popular products
 #news {
-
+  color: $text;
   background-color: $lightgray;
   padding: 40px 0;
   @media screen and (max-width: 992px) {
@@ -663,7 +668,7 @@ a#go-to-top:hover {
 }
 
 #blogs {
-
+  color: $text;
   #blog-box {
     display: flex;
     column-gap: $gap;
@@ -730,7 +735,7 @@ a#go-to-top:hover {
 //section brands
 
 #footer {
-
+  color: $text;
   #footer-box {
     display: flex;
     gap: $gap;
@@ -832,6 +837,7 @@ a#go-to-top:hover {
 
 
 #menu-wrapper {
+  color: $text;
   width: 100%;
   height: 100%;
   background-color: white;
@@ -844,6 +850,9 @@ a#go-to-top:hover {
 
   #menu-logo {
     width: 200px;
+    @media screen and (max-width: 768px){
+      width: 100px;
+    }
   }
 
 }

@@ -23,14 +23,14 @@ html(lang="en")
         a#go-to-top(href="#")
             i.fa-solid.fa-arrow-up
 
-        label(for="themeToggle" type="checkbox")#toggle.themeToggle.st-sunMoonThemeToggleBtn
+        label(for="themeToggle" type="checkbox").themeToggle.st-sunMoonThemeToggleBtn
                 input#themeToggle.themeToggleInput(type="checkbox")
                 svg(width="18" height="18" viewBox="0 0 20 20" fill="currentColor" stroke="none")
                     mask#moon-mask
                         rect(x="0" y="0" width="20" height="20" fill="white")
                         circle(cx="11" cy="3" r="8" fill="black")
 
-                    circle.sunMoon(cx="10" cy="10" r="8" mask="url(#moon-mask)")
+                    circle.sunMoon(cx="10" cy="10" r="7" mask="url(#moon-mask)")
                     g
                         circle.sunRay.sunRay1( cx="18" cy="10" r="1.5")
                         circle.sunRay.sunRay2(cx="14" cy="16.928" r="1.5")
