@@ -77,5 +77,9 @@ removeMenu.onclick = function () {
 }
 
 
+// $(document).ready(function() {
+//     $("#toggle").click(function() {});
+// });
+
 AOS.init();
 
