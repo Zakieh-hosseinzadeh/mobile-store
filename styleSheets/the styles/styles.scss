@@ -2,6 +2,54 @@
 @import "variables";
 @import "general";
 
+.container-icon {
+  position: relative;
+  color: white;
+}
+
+.input {
+  padding-left: $size-button;
+  height: $size-button;
+  font-size: 15px;
+  border: none;
+  color: #fff;
+  outline: none;
+  width: $size-button;
+  transition: all ease 0.3s;
+  background-color: #191A1E;
+  box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgb(95 94 94 / 25%), inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.input:focus,
+.input:not(:invalid) {
+  width: 200px;
+  cursor: text;
+  box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%), inset 1.5px 1.5px 3px #0e0e0e, inset -1.5px -1.5px 3px #5f5e5e;
+}
+
+.input:focus + .icon,
+.input:not(:invalid) + .icon {
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.container-icon .icon {
+  position: absolute;
+  width: $size-button;
+  height: $size-button;
+  top: 0;
+  left: 0;
+  padding: 8px;
+  pointer-events: none;
+}
+
+.container-icon .icon svg {
+  width: 100%;
+  height: 100%;
+}
+
 
 #go-to-top {
   width: $gap*3;
@@ -40,8 +88,16 @@ a#go-to-top:hover {
 #top-header {
   display: flex;
   justify-content: space-between;
-  padding: 10px 30px;
+  //padding: 10px 30px;
   align-items: center;
+
+  #logo img {
+    width: 100px;
+  }
+
+  @media screen and (max-width: 992px) {
+    padding: 0;
+  }
 
 
   .icons {
@@ -53,11 +109,16 @@ a#go-to-top:hover {
     font-size: 25px;
     color: $seconderyColor;
     @include transition();
+    vertical-align: -15px;
   }
 
   .icons i:hover {
     color: $primaryColor;
     cursor: pointer;
+  }
+
+  .fa-shopping-bag {
+    margin-top: 5px;
   }
 }
 
@@ -85,7 +146,7 @@ a#go-to-top:hover {
       width: 22px;
       height: 22px;
       border-radius: 50%;
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 768px) {
         width: 15px;
         height: 15px;
       }
@@ -324,10 +385,12 @@ a#go-to-top:hover {
   .slick-slide img {
     display: inline-block;
   }
-  .slick-list{
+
+  .slick-list {
     padding: 15px;
   }
-  .slick-slide{
+
+  .slick-slide {
     margin: 0 10px;
   }
 
@@ -409,34 +472,43 @@ a#go-to-top:hover {
   padding: 10px;
 
 }
+
 .slick-prev, .slick-next {
-  width: 40px!important;
+  width: 40px !important;
   height: 40px !important;
   background: $seconderyColor !important;
-  color: white!important;
+  color: white !important;
   border-radius: 50%;
-  padding: 10px!important;
+  padding: 10px !important;
 }
 
 .slick-next {
-  right: -50px!important;
+  right: 0 !important;
+  z-index: 10;
 }
 
 .slick-prev {
-  left: -50px!important;
+  left: 0 !important;
+  z-index: 10;
+
 }
-.slick-next:before{
-  content: '<'!important;
+
+.slick-next:before {
+  content: '<' !important;
 }
-.slick-prev:before{
-  content: '>'!important;
+
+.slick-prev:before {
+  content: '>' !important;
 }
-.slick-dots li button:before{
+
+.slick-dots li button:before {
   font-size: 70px;
 }
-.slick-dots li.slick-active button:before{
+
+.slick-dots li.slick-active button:before {
   color: $seconderyColor;
 }
+
 //section selling product
 
 #ads-banner {
@@ -543,6 +615,9 @@ a#go-to-top:hover {
   .menu-pup li a {
     color: $primaryColor;
     @include transition();
+    @media screen and (max-width: 576px) {
+      font-size: 13px;
+    }
   }
 
   .menu-pup li a:hover {
@@ -554,6 +629,9 @@ a#go-to-top:hover {
     background-color: $lightblue;
     padding: 7px;
     border-radius: 25px;
+    @media screen and (max-width: 576px) {
+      padding: 5px;
+    }
   }
 
 
@@ -813,6 +891,11 @@ a#go-to-top:hover {
   z-index: 20;
   transform: translateY(99%);
   @include transition();
+
+  #menu-logo {
+    width: 200px;
+  }
+
 }
 
 #menu-wrapper.menu-wrapper-close {
@@ -822,14 +905,14 @@ a#go-to-top:hover {
 
 #menu-box {
   width: 50%;
-  margin: 12% auto;
+  margin: 3% auto;
   display: grid;
   gap: $gap*2;
   grid-template-columns:repeat(2, 1fr);
-  @media screen and (max-width: 992px){
+  @media screen and (max-width: 992px) {
     width: 66%;
   }
-  @media screen and (max-width: 576px){
+  @media screen and (max-width: 576px) {
     grid-template-columns: auto;
     width: 50%;
   }
@@ -840,7 +923,7 @@ a#go-to-top:hover {
   padding: 20px;
   border-radius: 5px;
   @include transition();
-  @media screen and (max-width: 992px){
+  @media screen and (max-width: 992px) {
     padding: 12px;
   }
 }

@@ -6,6 +6,10 @@ html(lang="en")
 
         title "به سایت ما خوش آمدید"
 
+        //link(rel="shortcut icon" href="images/favicon.ico" type="image/x-icon")
+
+
+
         link(href="styleSheets/the styles/styles.css" rel="stylesheet")
         link(href="styleSheets/components/normalize.css" rel="stylesheet")
         link(href="styleSheets/components/fontawesome.css" rel="stylesheet")
@@ -15,7 +19,7 @@ html(lang="en")
         link(href="styleSheets/components/aos.css" rel="stylesheet")
         link(href="styleSheets/components/slick.css" rel="stylesheet")
         link(href="styleSheets/components/slick-theme.css" rel="stylesheet")
-
+        link(rel="shortcut icon" href="images/favicon.ico" )
 
 
     body
@@ -24,7 +28,7 @@ html(lang="en")
             i.fa-solid.fa-arrow-up
         section#menu-wrapper
 
-            img(src="" id="menu-logo" alt="لوگوی سایت")
+            img(src="images/logo.png" id="menu-logo" alt="لوگوی سایت")
             i#remove-menu.fa-solid.fa-times
 
             div#menu-box
@@ -52,7 +56,7 @@ html(lang="en")
                 .container
                     header#top-header
                         a(href="index.html")#logo
-                            img(src="images" alt="لوگوی سایت")
+                            img(src="images/logo.png" alt="لوگوی سایت")
                         nav.menu
                             ul
                                 li
@@ -66,7 +70,14 @@ html(lang="en")
                                 li
                                     a(href="#news") خبرنامه
                         div.icons
-                            i.fa-solid.fa-search
+                            div.container-icon
+                                input(type="text" name="text" required="" placeholder="Type to search...").input
+                                div.icon
+                                    svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512").ionicon
+                                        title Search
+                                        path(d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32")
+                                        path(fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448")
+
                             i.fa-solid.fa-shopping-bag
                             a(href="#")#show-menu
                                 i.fa-solid.fa-bars
