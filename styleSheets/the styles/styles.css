@@ -628,7 +628,7 @@ a#go-to-top:hover[data-theme=dark] {
   -moz-border-radius: 15px;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 0 15px 2px rgba(109, 109, 109, 0.05), 0 0 15px 1px rgba(132, 132, 132, 0.12);
+  box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgba(95, 94, 94, 0.25), inset 0px 0px 0px #0e0e0e, inset 0px 0px 0px #5f5e5e;
   cursor: pointer;
 }
 #category #category-box .categories[data-theme=light] {
@@ -781,7 +781,7 @@ a#go-to-top:hover[data-theme=dark] {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
-  box-shadow: 0 0 15px 2px rgba(109, 109, 109, 0.05), 0 0 15px 1px rgba(132, 132, 132, 0.12);
+  box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgba(95, 94, 94, 0.25), inset 0px 0px 0px #0e0e0e, inset 0px 0px 0px #5f5e5e;
   text-align: center;
   cursor: pointer;
   overflow: hidden;
@@ -1019,7 +1019,7 @@ a#go-to-top:hover[data-theme=dark] {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
-  box-shadow: 0 0 15px 2px rgba(109, 109, 109, 0.05), 0 0 15px 1px rgba(132, 132, 132, 0.12);
+  box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgba(95, 94, 94, 0.25), inset 0px 0px 0px #0e0e0e, inset 0px 0px 0px #5f5e5e;
   display: flex;
   flex-direction: column;
 }
@@ -1088,7 +1088,7 @@ a#go-to-top:hover[data-theme=dark] {
 }
 #popular-products .popular {
   transition: all 0.5s;
-  box-shadow: 0 0 15px 2px rgba(109, 109, 109, 0.05), 0 0 15px 1px rgba(132, 132, 132, 0.12);
+  box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgba(95, 94, 94, 0.25), inset 0px 0px 0px #0e0e0e, inset 0px 0px 0px #5f5e5e;
   text-align: center;
   cursor: pointer;
   overflow: hidden;
@@ -1134,7 +1134,7 @@ a#go-to-top:hover[data-theme=dark] {
   -moz-border-radius: 15px;
   border-radius: 15px;
   padding: 5px;
-  box-shadow: 0 0 15px 2px rgba(109, 109, 109, 0.05), 0 0 15px 1px rgba(132, 132, 132, 0.12);
+  box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgba(95, 94, 94, 0.25), inset 0px 0px 0px #0e0e0e, inset 0px 0px 0px #5f5e5e;
 }
 #news #news-form[data-theme=light] {
   color: #000;
@@ -1265,7 +1265,7 @@ a#go-to-top:hover[data-theme=dark] {
   column-gap: 15px;
 }
 #footer #app-wrapper a {
-  box-shadow: 0 0 15px 2px rgba(109, 109, 109, 0.05), 0 0 15px 1px rgba(132, 132, 132, 0.12);
+  box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgba(95, 94, 94, 0.25), inset 0px 0px 0px #0e0e0e, inset 0px 0px 0px #5f5e5e;
 }
 #footer #app-wrapper img {
   width: 90%;

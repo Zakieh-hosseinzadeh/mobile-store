@@ -38,16 +38,15 @@ $blue-light: #a5bbcb;
 $gray-light: #e8e8e85e;
 $text-light: #000;
 //$shadow-light: 0 0 3px 1px rgb(190 190 190 / 28%), 0 0 15px 1px rgba(0, 0, 0, .03);
-//$light-background: #e8e8e8;
 //$shadow: 0 0 15px 2px rgba(0,0,0,.1), 0 0 15px 1px rgba(0,0,0,.3);
-
 
 $primary-dark: #534fff;
 $secondery-dark: #304054;
 $terthery-dark: #1a1a1a;
 $blue-dark: #3d8bb2;
 $gray-dark: rgba(68, 68, 68, 0.37);
-$shadow: 0 0 15px 2px rgb(109 109 109 / 5%), 0 0 15px 1px rgb(132 132 132 / 12%);
+//$shadow: 0 0 15px 2px rgb(109 109 109 / 5%), 0 0 15px 1px rgb(132 132 132 / 12%);
+$shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgba(95, 94, 94, 0.25), inset 0px 0px 0px #0e0e0e, inset 0px 0px 0px #5f5e5e;
 /*#171717*/
 $text-dark: #fff;
 
