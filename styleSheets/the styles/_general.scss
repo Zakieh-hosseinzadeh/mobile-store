@@ -2,10 +2,19 @@
   box-sizing: border-box;
   @include fontIRANYEKAN();
 }
+body[data-theme="light"] {
+  background-color: $terthery-light;
+  color: $text-light;
+}
 
+body[data-theme="dark"] {
+  background-color: $terthery-dark;
+  color: $text-dark;
+
+}
 body {
   direction: rtl;
-  background-color: $tertheryColor;
+
 }
 
 a:link,
@@ -37,17 +46,26 @@ html, body {
 
 .btn-shop {
   display: inline-block;
-  background-color: $primaryColor;
+
+  &.btn-shop[data-theme="light"] {
+    background-color: $primary-light;
+  }
+
+  &.btn-shop[data-theme="dark"] {
+    background-color: $primary-dark;
+  }
+
   padding: 15px;
   border-radius: 35px;
   vertical-align: middle;
   color: #fff;
   @include transition();
   cursor: pointer;
-  
-  @media screen and (max-width: 576px){
-    padding:10px ;
+
+  @media screen and (max-width: 576px) {
+    padding: 10px;
   }
+
   i.fa-arrow-left {
     vertical-align: middle;
     margin-right: 4px;
@@ -55,11 +73,24 @@ html, body {
 }
 
 .btn-shop:hover {
-  background-color: $seconderyColor;
+  &.btn-shop:hover[data-theme="light"] {
+    background-color: $secondery-light;
+  }
+
+  &.btn-shop:hover[data-theme="dark"] {
+    background-color: $secondery-dark;
+  }
 }
 
 .title {
-  color: $text;
+  .title[data-theme="light"] {
+    color: $text-light;
+  }
+
+  .title[data-theme="dark"] {
+    color: $text-dark;
+  }
+
   @include fontPinar();
   margin: 20px 0;
 
@@ -67,7 +98,7 @@ html, body {
     margin: 0;
     font-size: 25px;
     display: inline-block;
-    @media screen and (max-width: 576px){
+    @media screen and (max-width: 576px) {
       font-size: 16px;
       margin: 20px 0;
     }
@@ -79,12 +110,23 @@ html, body {
   content: "";
   width: 20px;
   height: 4px;
-  background-color: $primaryColor;
+
+  .title h3::before,
+  .title h3::after[data-theme="light"] {
+    background-color: $primary-light;
+  }
+
+  .title h3::before,
+  .title h3::after[data-theme="dark"] {
+    background-color: $primary-dark;
+  }
+
   display: inline-block;
   vertical-align: 2px;
 
 
 }
+
 @media screen and (max-width: 576px) {
   .title h3::before,
   .title h3::after {
@@ -110,28 +152,56 @@ html, body {
 }
 
 .menu li a {
-  color: $primaryColor;
+  &.menu li a[data-theme="light"] {
+    color: $primary-light;
+  }
+
+  &.menu li a[data-theme="dark"] {
+    color: $primary-dark;
+  }
+
   @include transition();
 }
 
 .menu li a:hover {
-  color: $seconderyColor;
+  &[data-theme="light"] {
+    color: $secondery-light;
+  }
+
+  &[data-theme="dark"] {
+    color: $secondery-dark;
+  }
 }
 
 .menu li a:hover {
-  background-color: $lightblue;
+  &[data-theme="light"] {
+    background-color: $blue-light;
+  }
+
+  &[data-theme="dark"] {
+    background-color: $blue-dark;
+  }
+
   padding: 7px;
   border-radius: 25px;
 
 }
-@media screen and (max-width: 768px){
-  .menu{
+
+@media screen and (max-width: 768px) {
+  .menu {
     display: none;
   }
 }
 
 .active-menu {
-  background-color: $lightblue;
+  &[data-theme="light"] {
+    background-color: $blue-light;
+  }
+
+  &[data-theme="dark"] {
+    background-color: $blue-dark;
+  }
+
   padding: 7px;
   border-radius: 25px;
 }

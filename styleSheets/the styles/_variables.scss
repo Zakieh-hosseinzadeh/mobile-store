@@ -1,3 +1,4 @@
+@import "mixins";
 @font-face {
   font-family: "IRANYekan";
   font-weight: normal;
@@ -29,27 +30,27 @@
   src: url("../fonts/pinar/Pinar-Bold.ttf") format('truetype'),
   url("../fonts/pinar/Pinar-Bold.woff2") format('woff');
 }
-$primaryColor: #7774ff;
-$seconderyColor: #232c35;
-$tertheryColor: #feef2f5;
-$lightblue: #a5bbcb;
-$lightgray: #e8e8e85e;
-$gap: 15px;
-$shadow: 0 0 3px 1px rgb(190 190 190 / 28%), 0 0 15px 1px rgba(0, 0, 0, .03);
-$border: 1px solid black;
-$size-button: 40px;
-//$background: #e8e8e8;
-$text: #000;
+
+$primary-light: #7774ff;
+$secondery-light: #232c35;
+$terthery-light: #feef2f5;
+$blue-light: #a5bbcb;
+$gray-light: #e8e8e85e;
+$text-light: #000;
+//$shadow-light: 0 0 3px 1px rgb(190 190 190 / 28%), 0 0 15px 1px rgba(0, 0, 0, .03);
+//$light-background: #e8e8e8;
 //$shadow: 0 0 15px 2px rgba(0,0,0,.1), 0 0 15px 1px rgba(0,0,0,.3);
 
-.dark-mode {
-  $primaryColor: #534fff;
-  $seconderyColor: #304054;
-  $tertheryColor: #1a1a1a;
-  $lightblue: #a5bbcb;
-  $lightgray: #e8e8e85e;
-  $shadow: 0 0 15px 2px rgb(109 109 109 / 10%), 0 0 15px 1px rgb(132 132 132 / 30%);
-  //$background: ;
-  /*#171717*/
-  $text: #fff;
-}
+
+$primary-dark: #534fff;
+$secondery-dark: #304054;
+$terthery-dark: #1a1a1a;
+$blue-dark: #3d8bb2;
+$gray-dark: rgba(68, 68, 68, 0.37);
+$shadow: 0 0 15px 2px rgb(109 109 109 / 5%), 0 0 15px 1px rgb(132 132 132 / 12%);
+/*#171717*/
+$text-dark: #fff;
+
+$gap: 15px;
+$border: 1px solid black;
+$size-button: 40px;
