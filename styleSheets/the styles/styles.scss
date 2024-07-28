@@ -62,7 +62,7 @@ a#go-to-top:hover {
   .icons i {
     font-size: 25px;
 
-    color: var(--secondary);
+    color: var(--text);
 
     @include transition();
     vertical-align: -15px;
@@ -987,7 +987,7 @@ a#go-to-top:hover {
 
 #remove-menu {
   cursor: pointer;
-  font-size: 25px;
+  font-size: 40px;
 }
 
 
