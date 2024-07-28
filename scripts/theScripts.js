@@ -77,24 +77,40 @@ removeMenu.onclick = function () {
 }
 
 
-
 const toggleButton = document.getElementById('themeToggle');
 const body = document.body;
 
-const  currentTheme=localStorage.getItem('theme')||'light';
-body.setAttribute('data-theme',currentTheme);
-toggleButton.setAttribute('data-theme',currentTheme)
-toggleButton.addEventListener('click', function() {
+const currentTheme = localStorage.getItem('theme') || 'light';
+body.setAttribute('data-theme', currentTheme);
+toggleButton.setAttribute('data-theme', currentTheme)
+toggleButton.addEventListener('click', function () {
     const newTheme = body.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
     body.setAttribute('data-theme', newTheme);
     toggleButton.setAttribute('data-theme', newTheme);
 
-    localStorage.setItem('theme',newTheme);
+    localStorage.setItem('theme', newTheme);
 });
 
+let phoneNumber = "0910-912-4505";
 
 
-let phoneNumber="0910-912-4505";
+let modalShow = false;
+window.onscroll = function () {
+    let modal = document.getElementById("overlay")
+    let windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+    let documentHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+    let scrollPosition = window.scrollY || window.pageXOffset || document.documentElement.scrollTop;
+
+    if (modalShow===false&&scrollPosition > (documentHeight - windowHeight) / 2) {
+        modal.style.display = "flex";
+        modalShow = true;
+    }
+}
+
+function closePopup() {
+    document.getElementById('overlay').style.display = 'none'
+}
+
 
 AOS.init();
 
