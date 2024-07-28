@@ -800,7 +800,6 @@ a#go-to-top:hover {
 
   .foot {
     flex: 1;
-
     color: var(--text);
   }
 
@@ -848,11 +847,12 @@ a#go-to-top:hover {
 
   .lists a:link,
   .lists a:visited {
-    color: black;
+    color: var(--text);
     @include transition();
     margin-right: 10px;
     display: inline-block;
     vertical-align: 2px;
+
   }
 
   .lists a:hover {
@@ -862,7 +862,7 @@ a#go-to-top:hover {
 
 #copy-right {
   background-color: var(--gray);
-
+  color: var(--text);
   #copy {
     text-align: center;
     margin: 0;
