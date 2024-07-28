@@ -413,7 +413,7 @@ a#go-to-top:hover {
   display: flex;
   padding: 0;
   width: 60%;
-  margin: 0 auto;
+  margin: 5px auto;
   transition: all .3s ease 0s;
   opacity: 0;
 }
@@ -427,17 +427,19 @@ a#go-to-top:hover {
   flex: 1;
 }
 
-.btn-like a {
+
+.btn-like button{
+  border: none;
   border-radius: 50%;
   padding: 7px;
-
   background-color: var(--secondary);
-
   color: #fff;
   @include transition();
+  cursor: pointer;
 }
 
-.btn-like a:hover {
+.btn-like a:hover,
+.btn-like button:hover{
   background-color: var(--primary);
 }
 

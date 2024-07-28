@@ -162,10 +162,11 @@ html, body {
 }
 
 
-#overlay{
+#overlay {
+
   width: 100%;
   height: 100vh;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
   left: 0;
@@ -175,25 +176,34 @@ html, body {
   text-align: left;
   z-index: 30;
 }
-#popup{
+
+#popup {
+  @include fontPinar();
   width: 740px;
   height: 410px;
   /*border: 1px solid red;*/
   background-color: white;
   background-image: url("../../images/popup_bg.jpg");
-  background-position:center ;
-  background-size:cover ;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 50px;
   position: relative;
+
 }
-#close_icon{
+
+#popup h2 {
+  font-size: 30px;
+}
+
+#close_icon {
   position: absolute;
   top: $gap;
   right: $gap;
   cursor: pointer;
 }
-#close_icon:hover{
+
+#close_icon:hover {
   opacity: 0.5;
 }
 

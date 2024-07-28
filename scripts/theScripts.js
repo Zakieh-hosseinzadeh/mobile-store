@@ -113,7 +113,6 @@ function closePopup() {
 
 
 $('.link-product').click(function () {
-    let link = $(this).attr('href');
     let $temp = $("<input>")
     $("body").append($temp)
     document.execCommand("copy")
