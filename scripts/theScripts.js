@@ -128,22 +128,22 @@ $('.link-product').click(function () {
 
 
 $('.shareTwitterBtn').click(function () {
-    var url = $('#shareLinkInput').val();
-    var twitterUrl = "https//:twitter.com/intent/tweet?url=${encodeURIComponent(url)}";
+    let url = $('#shareLinkInput').val();
+    let twitterUrl = `https//:twitter.com/intent/tweet?url=${encodeURIComponent(url)}`;
     window.open(twitterUrl, '_blank');
 });
 
 // Share on Facebook
 $('.shareFacebookBtn').click(function () {
-    var url = $('#shareLinkInput').val();
-    var facebookUrl = "https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}";
+    let url = $('#shareLinkInput').val();
+    let facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
     window.open(facebookUrl, '_blank');
 });
 
 // Share on WhatsApp
 $('.shareWhatsAppBtn').click(function () {
-    var url = $('#shareLinkInput').val();
-    var whatsappUrl = "https://api.whatsapp.com/send?text=${encodeURIComponent(url)}";
+    let url = $('#shareLinkInput').val();
+    let whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(url)}`;
     window.open(whatsappUrl, '_blank');
 });
 
