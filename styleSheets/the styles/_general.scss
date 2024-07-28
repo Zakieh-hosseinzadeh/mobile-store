@@ -187,8 +187,8 @@ html, body {
 }
 #close_icon{
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: $gap;
+  right: $gap;
   cursor: pointer;
 }
 #close_icon:hover{
