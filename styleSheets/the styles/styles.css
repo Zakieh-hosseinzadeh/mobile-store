@@ -45,7 +45,7 @@ body[data-theme=dark] {
   --primary: #534fff;
   --terthery: #1a1a1a;
   --secondary: #304054;
-  --blue: #3d8bb2;
+  --blue: #A5BBF0;
   --gray: rgba(68, 68, 68, 0.37);
   --text: #fff;
 }
@@ -97,7 +97,7 @@ body[data-theme=dark] {
   --primary: #534fff;
   --terthery: #1a1a1a;
   --secondary: #304054;
-  --blue: #3d8bb2;
+  --blue: #A5BBF0;
   --gray: rgba(68, 68, 68, 0.37);
   --text: #fff;
 }
@@ -356,7 +356,7 @@ body[data-theme=dark] {
   --primary: #534fff;
   --terthery: #1a1a1a;
   --secondary: #304054;
-  --blue: #3d8bb2;
+  --blue: #A5BBF0;
   --gray: rgba(68, 68, 68, 0.37);
   --text: #fff;
 }
@@ -912,7 +912,6 @@ a#go-to-top:hover {
   cursor: pointer;
 }
 
-.btn-like a:hover,
 .btn-like button:hover {
   background-color: var(--primary);
 }
