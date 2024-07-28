@@ -76,13 +76,20 @@ removeMenu.onclick = function () {
     document.getElementById("menu-wrapper").classList.remove("menu-wrapper-close")
 }
 
+
+
 const toggleButton = document.getElementById('themeToggle');
 const body = document.body;
+
+const  currentTheme=localStorage.getItem('theme')||'light';
+body.setAttribute('data-theme',currentTheme);
+toggleButton.setAttribute('data-theme',currentTheme)
 toggleButton.addEventListener('click', function() {
     const newTheme = body.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
     body.setAttribute('data-theme', newTheme);
     toggleButton.setAttribute('data-theme', newTheme);
 
+    localStorage.setItem('theme',newTheme);
 });
 
 
