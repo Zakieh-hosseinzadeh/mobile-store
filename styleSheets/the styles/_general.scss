@@ -8,14 +8,13 @@
 body {
   direction: rtl;
   background-color: var(--terthery);
-  margin: 0;
-  padding: 0;
+
 }
 
 a:link,
 a:visited {
   text-decoration: none;
-  color: var(--text) !important;
+  //color: var(--text) !important;
 }
 
 ul {

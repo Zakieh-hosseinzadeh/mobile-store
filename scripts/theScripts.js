@@ -85,5 +85,9 @@ toggleButton.addEventListener('click', function() {
 
 });
 
+
+
+let phoneNumber="0910-912-4505";
+
 AOS.init();
 
