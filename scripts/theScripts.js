@@ -112,5 +112,13 @@ function closePopup() {
 }
 
 
+// $('.link-product').click(function () {
+//     let copyText=document.querySelector('.link-product');
+//     copyText.select();
+//     document.execCommand("copy");
+//     alert("لینک کپی شد!")
+// })
+
+
 AOS.init();
 

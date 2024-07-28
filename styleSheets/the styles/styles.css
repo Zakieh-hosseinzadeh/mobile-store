@@ -283,6 +283,9 @@ html, body {
   /*border: 1px solid red;*/
   background-color: white;
   background-image: url("../../images/popup_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 50px;
   position: relative;
 }
@@ -882,7 +885,8 @@ a#go-to-top:hover {
   opacity: 0;
 }
 
-.b-sell:hover > .btn-like {
+.b-sell:hover > .btn-like,
+.popular:hover > .btn-like {
   opacity: 1;
 }
 

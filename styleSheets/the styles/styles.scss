@@ -418,7 +418,8 @@ a#go-to-top:hover {
   opacity: 0;
 }
 
-.b-sell:hover > .btn-like {
+.b-sell:hover > .btn-like,
+.popular:hover > .btn-like {
   opacity: 1;
 }
 

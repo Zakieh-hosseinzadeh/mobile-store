@@ -181,6 +181,9 @@ html, body {
   /*border: 1px solid red;*/
   background-color: white;
   background-image: url("../../images/popup_bg.jpg");
+  background-position:center ;
+  background-size:cover ;
+  background-repeat: no-repeat;
   padding: 50px;
   position: relative;
 }
