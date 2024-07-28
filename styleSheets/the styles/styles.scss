@@ -69,7 +69,7 @@ a#go-to-top:hover {
   }
 
   .icons i:hover {
-    color: var(--text);
+    color: var(--primary);
     cursor: pointer;
   }
 
@@ -988,8 +988,11 @@ a#go-to-top:hover {
 #remove-menu {
   cursor: pointer;
   font-size: 40px;
+  @include transition();
 }
-
+#remove-menu:hover{
+  color: var(--primary);
+}
 
 
 
