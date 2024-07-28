@@ -1,4 +1,5 @@
 @import "mixins";
+
 @font-face {
   font-family: "IRANYekan";
   font-weight: normal;
@@ -31,9 +32,14 @@
   url("../fonts/pinar/Pinar-Bold.woff2") format('woff');
 }
 
+$gap: 15px;
+$border: 1px solid black;
+$size-button: 40px;
+
+
 $primary-light: #7774ff;
 $secondery-light: #232c35;
-$terthery-light: #feef2f5;
+$terthery-light: #fff;
 $blue-light: #a5bbcb;
 $gray-light: #e8e8e85e;
 $text-light: #000;
@@ -47,9 +53,44 @@ $blue-dark: #3d8bb2;
 $gray-dark: rgba(68, 68, 68, 0.37);
 //$shadow: 0 0 15px 2px rgb(109 109 109 / 5%), 0 0 15px 1px rgb(132 132 132 / 12%);
 $shadow: 1.5px 1.5px 3px #0E0E00, -1.5px -1.5px 0.5px rgba(93, 93, 93, 0.01), inset 0px 0px 0px #0e0e0e, inset 0px 0px 0px #5F5E5F;
-/*#171717*/
 $text-dark: #fff;
 
-$gap: 15px;
-$border: 1px solid black;
-$size-button: 40px;
+$primary: #7774ff;
+$secondery: #232c35;
+$terthery: #fff;
+$blue: #a5bbcb;
+$gray: #e8e8e85e;
+$text: #000;
+
+:root {
+
+  --primary: #{$primary};
+  --secondary: #{$secondery};
+  --terthery: #{$terthery};
+  --blue: #{$blue};
+  --gray: #{$gray};
+  --text: #{$text};
+
+}
+
+body[data-theme="light"] {
+  --primary: #{$primary-light};
+  --terthery: #{$terthery-light};
+  --secondary: #{$secondery-light};
+  --blue: #{$blue-light};
+  --text: #{$text-light};
+}
+
+body[data-theme="dark"] {
+  --primary: #{$primary-dark};
+  --terthery: #{$terthery-dark};
+  --secondary: #{$secondery-dark};
+  --blue: #{$blue-dark};
+  --gray: #{$gray-dark};
+  --text: #{$text-dark};
+
+}
+
+
+
+

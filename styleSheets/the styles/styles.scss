@@ -10,16 +10,8 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  color: white;
-
-  &[data-theme="light"] {
-    background-color: $secondery-light;
-  }
-
-  &[data-theme="dark"] {
-    background-color: $secondery-dark;
-  }
-
+  color: white !important;
+  background-color: var(--secondary);
   box-shadow: 0 0 23px 5px rgb(255 255 255 / 8%);
   position: fixed;
   bottom: 20px;
@@ -29,13 +21,8 @@
 }
 
 a#go-to-top:hover {
-  &[data-theme="light"] {
-    background-color: $primary-light;
-  }
 
-  &[data-theme="dark"] {
-    background-color: $primary-dark;
-  }
+  background-color: var(--primary);
 }
 
 #go-to-top > .fa-arrow-up::before {
@@ -75,27 +62,14 @@ a#go-to-top:hover {
   .icons i {
     font-size: 25px;
 
-    &[data-theme="light"] {
-      color: $secondery-light;
-    }
-
-    &[data-theme="dark"] {
-      color: $secondery-dark;
-    }
+    color: var(--secondary);
 
     @include transition();
     vertical-align: -15px;
   }
 
   .icons i:hover {
-    &[data-theme="light"] {
-      color: $text-light;
-    }
-
-    &[data-theme="dark"] {
-      color: $text-dark;
-    }
-
+    color: var(--text);
     cursor: pointer;
   }
 
@@ -150,13 +124,7 @@ a#go-to-top:hover {
     .bx-wrapper .bx-pager.bx-default-pager a.active,
     .bx-wrapper .bx-pager.bx-default-pager a:focus,
     .bx-wrapper .bx-pager.bx-default-pager a:hover {
-      &[data-theme="light"] {
-        background-color: $primary-light;
-      }
-
-      &[data-theme="dark"] {
-        background-color: $primary-dark;
-      }
+      background-color: var(--primary);
     }
   }
 
@@ -253,13 +221,7 @@ a#go-to-top:hover {
       @include brRadius();
       overflow: hidden;
 
-      &[data-theme="light"] {
-        color: $text-light;
-      }
-
-      &[data-theme="dark"] {
-        color: $text-dark;
-      }
+      color: var(--text);
 
       box-shadow: $shadow;
 
@@ -318,7 +280,7 @@ a#go-to-top:hover {
     }
 
     .banner-content {
-      color: $text-light!important;
+      color: $text-light !important;
       position: absolute;
       top: 15px;
       right: 105px;
@@ -379,13 +341,7 @@ a#go-to-top:hover {
   column-gap: $gap;
 
   .b-sell {
-    &[data-theme="light"] {
-      color: $text-light;
-    }
-
-    &[data-theme="dark"] {
-      color: $text-dark;
-    }
+    color: var(--text);
   }
 
   .b-sell a {
@@ -446,23 +402,11 @@ a#go-to-top:hover {
 }
 
 .b-sell h4:hover {
-  &[data-theme="light"] {
-    color: $primary-light;
-  }
-
-  &[data-theme="dark"] {
-    color: $primary-dark;
-  }
+  color: var(--primary);
 }
 
 .b-sell p {
-  &[data-theme="light"] {
-    color: $primary-light;
-  }
-
-  &[data-theme="dark"] {
-    color: $primary-dark;
-  }
+  color: var(--primary)
 }
 
 .btn-like {
@@ -486,26 +430,14 @@ a#go-to-top:hover {
   border-radius: 50%;
   padding: 7px;
 
-  &[data-theme="light"] {
-    background-color: $secondery-light;
-  }
-
-  &[data-theme="dark"] {
-    background-color: $secondery-dark;
-  }
+  background-color: var(--secondary);
 
   color: #fff;
   @include transition();
 }
 
 .btn-like a:hover {
-  &[data-theme="light"] {
-    background-color: $primary-light;
-  }
-
-  &[data-theme="dark"] {
-    background-color: $primary-dark;
-  }
+  background-color: var(--primary);
 }
 
 .slick-next:link,
@@ -526,13 +458,7 @@ a#go-to-top:hover {
   width: 40px !important;
   height: 40px !important;
 
-  &[data-theme="light"] {
-    background-color: $secondery-light !important;
-  }
-
-  &[data-theme="dark"] {
-    background-color: $secondery-dark !important;
-  }
+  background-color: var(--secondary) !important;
 
   color: white !important;
   border-radius: 50%;
@@ -563,13 +489,7 @@ a#go-to-top:hover {
 }
 
 .slick-dots li.slick-active button:before {
-  &[data-theme="light"] {
-    color: $secondery-light;
-  }
-
-  &[data-theme="dark"] {
-    color: $secondery-dark;
-  }
+  color: var(--secondary);
 }
 
 //section selling product
@@ -620,13 +540,7 @@ a#go-to-top:hover {
     margin: 0 auto;
     padding: $gap;
 
-    &[data-theme="light"] {
-      background-color: $primary-light;
-    }
-
-    &[data-theme="dark"] {
-      background-color: $primary-dark;
-    }
+    background-color: var(--primary);
 
     color: #fff;
   }
@@ -636,25 +550,13 @@ a#go-to-top:hover {
   }
 
   .container-content a {
-    &[data-theme="light"] {
-      color: $secondery-light;
-    }
-
-    &[data-theme="dark"] {
-      color: $secondery-dark;
-    }
+    color: var(--secondary);
 
     @include transition();
   }
 
   .container-content a:hover {
-    &[data-theme="light"] {
-      color: $primary-light;
-    }
-
-    &[data-theme="dark"] {
-      color: $primary-dark;
-    }
+    color: var(--primary);
   }
 
   #time-btn {
@@ -702,13 +604,7 @@ a#go-to-top:hover {
   }
 
   .menu-pup li a {
-    &[data-theme="light"] {
-      color: $primary-light;
-    }
-
-    &[data-theme="dark"] {
-      color: $primary-dark;
-    }
+    color: var(--primary);
 
     @include transition();
     @media screen and (max-width: 576px) {
@@ -717,24 +613,12 @@ a#go-to-top:hover {
   }
 
   .menu-pup li a:hover {
-    &[data-theme="light"] {
-      color: $secondery-light;
-    }
-
-    &[data-theme="dark"] {
-      color: $secondery-dark;
-    }
+    color: var(--secondary);
   }
 
   .menu-pup li a:hover,
   .menu-pup a.active {
-    &[data-theme="light"] {
-      background-color: $blue-light;
-    }
-
-    &[data-theme="dark"] {
-      background-color: $blue-dark;
-    }
+    background-color: var(--blue);
 
     padding: 7px;
     border-radius: 25px;
@@ -764,13 +648,7 @@ a#go-to-top:hover {
 
     box-shadow: $shadow;
 
-    &[data-theme="light"] {
-      color: $text-light;
-    }
-
-    &[data-theme="dark"] {
-      color: $text-dark;
-    }
+    color: var(--text);
 
     text-align: center;
     cursor: pointer;
@@ -786,13 +664,7 @@ a#go-to-top:hover {
   }
 
   .popular p {
-    &[data-theme="light"] {
-      color: $primary-light;
-    }
-
-    &[data-theme="dark"] {
-      color: $primary-dark;
-    }
+    color: var(--primary);
   }
 }
 
@@ -800,13 +672,7 @@ a#go-to-top:hover {
 #news {
 
 
-  &[data-theme="light"] {
-    background-color: $gray-light;
-  }
-
-  &[data-theme="dark"] {
-    background-color: $gray-light;
-  }
+  background-color: var(--gray);
 
   padding: 40px 0;
   @media screen and (max-width: 992px) {
@@ -820,13 +686,7 @@ a#go-to-top:hover {
     @include brRadius();
     padding: 5px;
 
-    &[data-theme="light"] {
-      color: $text-light;
-    }
-
-    &[data-theme="dark"] {
-      color: $text-dark;
-    }
+    color: var(--text);
 
     box-shadow: $shadow;
 
@@ -869,13 +729,7 @@ a#go-to-top:hover {
     flex: 1;
     overflow: hidden;
 
-    &[data-theme="light"] {
-      color: $text-light;
-    }
-
-    &[data-theme="dark"] {
-      color: $text-dark;
-    }
+    color: var(--text);
   }
 
   .blog img {
@@ -947,13 +801,7 @@ a#go-to-top:hover {
   .foot {
     flex: 1;
 
-    &[data-theme="light"] {
-      color: $text-light;
-    }
-
-    &[data-theme="dark"] {
-      color: $text-dark;
-    }
+    color: var(--text);
   }
 
   @media screen and (max-width: 768px) {
@@ -995,13 +843,7 @@ a#go-to-top:hover {
   }
 
   .lists i {
-    &[data-theme="light"] {
-      color: $primary-light;
-    }
-
-    &[data-theme="dark"] {
-      color: $primary-dark;
-    }
+    color: var(--primary);
   }
 
   .lists a:link,
@@ -1014,24 +856,12 @@ a#go-to-top:hover {
   }
 
   .lists a:hover {
-    &[data-theme="light"] {
-      color: $primary-light;
-    }
-
-    &[data-theme="dark"] {
-      color: $primary-dark;
-    }
+    color: var(--primary);
   }
 }
 
 #copy-right {
-  &[data-theme="light"] {
-    background-color: $gray-light;
-  }
-
-  &[data-theme="dark"] {
-    background-color: $gray-dark;
-  }
+  background-color: var(--gray);
 
   #copy {
     text-align: center;
@@ -1064,13 +894,7 @@ a#go-to-top:hover {
 
 
 #menu-wrapper {
-  &[data-theme="light"] {
-    color: $text-light;
-  }
-
-  &[data-theme="dark"] {
-    color: $text-dark;
-  }
+  color: var(--text);
 
   width: 100%;
   height: 100%;
@@ -1112,7 +936,7 @@ a#go-to-top:hover {
 }
 
 .menu-hov {
-  background-color: #cecece;
+  background-color: var(--terthery);
   padding: 20px;
   border-radius: 5px;
   @include transition();
@@ -1122,13 +946,7 @@ a#go-to-top:hover {
 }
 
 .menu-hov:hover {
-  &[data-theme="light"] {
-    background-color: $secondery-light;
-  }
-
-  &[data-theme="dark"] {
-    background-color: $secondery-dark;
-  }
+  background-color: var(--secondary);
 }
 
 #menu-hov-box .menu-hov:nth-child(odd) {

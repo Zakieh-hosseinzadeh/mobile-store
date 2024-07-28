@@ -55,19 +55,14 @@
 }
 
 
-
-
 .themeToggle {
   color: #fff;
   width: 3em;
 }
-.st-sunMoonThemeToggleBtn:hover{
-  &[data-theme="light"]{
-    background-color: $primary-light;
-  }
-  &[data-theme="dark"]{
-    background-color: $primary-dark;
-  }}
+
+.st-sunMoonThemeToggleBtn:hover {
+  background-color: var(--primary);
+}
 
 .st-sunMoonThemeToggleBtn {
   //position: relative;
@@ -118,15 +113,19 @@
 .st-sunMoonThemeToggleBtn svg .sunRay2 {
   animation-delay: 0.05s !important;
 }
+
 .st-sunMoonThemeToggleBtn svg .sunRay3 {
   animation-delay: 0.1s !important;
 }
+
 .st-sunMoonThemeToggleBtn svg .sunRay4 {
   animation-delay: 0.17s !important;
 }
+
 .st-sunMoonThemeToggleBtn svg .sunRay5 {
   animation-delay: 0.25s !important;
 }
+
 .st-sunMoonThemeToggleBtn svg .sunRay5 {
   animation-delay: 0.29s !important;
 }
@@ -134,12 +133,15 @@
 .st-sunMoonThemeToggleBtn .themeToggleInput:checked + svg {
   transform: rotate(90deg);
 }
+
 .st-sunMoonThemeToggleBtn .themeToggleInput:checked + svg mask > circle {
   transform: translate(16px, -3px);
 }
+
 .st-sunMoonThemeToggleBtn .themeToggleInput:checked + svg .sunMoon {
   transform: scale(0.55);
 }
+
 .st-sunMoonThemeToggleBtn .themeToggleInput:checked + svg .sunRay {
   animation: showRay1832 0.4s ease 0s 1 forwards;
 }

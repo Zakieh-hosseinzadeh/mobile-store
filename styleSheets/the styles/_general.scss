@@ -1,25 +1,21 @@
+@import "variables";
+
 * {
   box-sizing: border-box;
   @include fontIRANYEKAN();
 }
-body[data-theme="light"] {
-  background-color: $terthery-light;
-  color: $text-light;
-}
 
-body[data-theme="dark"] {
-  background-color: $terthery-dark;
-  color: $text-dark;
-
-}
 body {
   direction: rtl;
-
+  background-color: var(--terthery);
+  margin: 0;
+  padding: 0;
 }
 
 a:link,
 a:visited {
   text-decoration: none;
+  color: var(--text) !important;
 }
 
 ul {
@@ -47,13 +43,7 @@ html, body {
 .btn-shop {
   display: inline-block;
 
-  &.btn-shop[data-theme="light"] {
-    background-color: $primary-light;
-  }
-
-  &.btn-shop[data-theme="dark"] {
-    background-color: $primary-dark;
-  }
+  background-color: var(--primary);
 
   padding: 15px;
   border-radius: 35px;
@@ -73,23 +63,11 @@ html, body {
 }
 
 .btn-shop:hover {
-  &.btn-shop:hover[data-theme="light"] {
-    background-color: $secondery-light;
-  }
-
-  &.btn-shop:hover[data-theme="dark"] {
-    background-color: $secondery-dark;
-  }
+  background-color: var(--secondary);
 }
 
 .title {
-  .title[data-theme="light"] {
-    color: $text-light;
-  }
-
-  .title[data-theme="dark"] {
-    color: $text-dark;
-  }
+  color: var(--text);
 
   @include fontPinar();
   margin: 20px 0;
@@ -110,21 +88,9 @@ html, body {
   content: "";
   width: 20px;
   height: 4px;
-
-  .title h3::before,
-  .title h3::after[data-theme="light"] {
-    background-color: $primary-light;
-  }
-
-  .title h3::before,
-  .title h3::after[data-theme="dark"] {
-    background-color: $primary-dark;
-  }
-
+  background-color: var(--primary);
   display: inline-block;
   vertical-align: 2px;
-
-
 }
 
 @media screen and (max-width: 576px) {
@@ -152,35 +118,17 @@ html, body {
 }
 
 .menu li a {
-  &.menu li a[data-theme="light"] {
-    color: $primary-light;
-  }
-
-  &.menu li a[data-theme="dark"] {
-    color: $primary-dark;
-  }
+  color: var(--primary);
 
   @include transition();
 }
 
 .menu li a:hover {
-  &[data-theme="light"] {
-    color: $secondery-light;
-  }
-
-  &[data-theme="dark"] {
-    color: $secondery-dark;
-  }
+  color: var(--secondary);
 }
 
 .menu li a:hover {
-  &[data-theme="light"] {
-    background-color: $blue-light;
-  }
-
-  &[data-theme="dark"] {
-    background-color: $blue-dark;
-  }
+  background-color: var(--blue);
 
   padding: 7px;
   border-radius: 25px;
@@ -194,13 +142,7 @@ html, body {
 }
 
 .active-menu {
-  &[data-theme="light"] {
-    background-color: $blue-light;
-  }
-
-  &[data-theme="dark"] {
-    background-color: $blue-dark;
-  }
+  background-color: var(--blue);
 
   padding: 7px;
   border-radius: 25px;
