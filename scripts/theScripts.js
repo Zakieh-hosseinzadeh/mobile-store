@@ -101,7 +101,7 @@ window.onscroll = function () {
     let documentHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
     let scrollPosition = window.scrollY || window.pageXOffset || document.documentElement.scrollTop;
 
-    if (modalShow===false&&scrollPosition > (documentHeight - windowHeight) / 2) {
+    if (modalShow === false && scrollPosition > (documentHeight - windowHeight) / 2) {
         modal.style.display = "flex";
         modalShow = true;
     }
@@ -112,13 +112,40 @@ function closePopup() {
 }
 
 
-// $('.link-product').click(function () {
-//     let copyText=document.querySelector('.link-product');
-//     copyText.select();
-//     document.execCommand("copy");
-//     alert("لینک کپی شد!")
-// })
+$('.link-product').click(function () {
+    let link = $(this).attr('href');
+    let $temp = $("<input>")
+    $("body").append($temp)
+    document.execCommand("copy")
+    $temp.remove();
+    Swal.fire({
+        icon: 'success',
+        title: 'با موفقیت انجام شد...',
+        text: 'لینک کپی شد!'
+    })
+    // alert('copy')
+})
 
+
+$('.shareTwitterBtn').click(function () {
+    var url = $('#shareLinkInput').val();
+    var twitterUrl = "https//:twitter.com/intent/tweet?url=${encodeURIComponent(url)}";
+    window.open(twitterUrl, '_blank');
+});
+
+// Share on Facebook
+$('.shareFacebookBtn').click(function () {
+    var url = $('#shareLinkInput').val();
+    var facebookUrl = "https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}";
+    window.open(facebookUrl, '_blank');
+});
+
+// Share on WhatsApp
+$('.shareWhatsAppBtn').click(function () {
+    var url = $('#shareLinkInput').val();
+    var whatsappUrl = "https://api.whatsapp.com/send?text=${encodeURIComponent(url)}";
+    window.open(whatsappUrl, '_blank');
+});
 
 AOS.init();
 
