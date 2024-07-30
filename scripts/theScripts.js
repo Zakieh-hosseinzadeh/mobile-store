@@ -164,8 +164,8 @@ $('.shareWhatsAppBtn').click(function () {
 $(function () {
     $('#time-btn').countdown({
         year: 2024, // YYYY Format
-        month: 8, // 1-12
-        day: 2, // 1-31
+        month: 12, // 1-12
+        day: 12, // 1-31
         hour: 12, // 24 hour format 0-23
         minute: 12, // 0-59
         second: 12, // 0-59
