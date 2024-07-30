@@ -92,20 +92,35 @@ toggleButton.addEventListener('click', function () {
 });
 
 let phoneNumber = "0910-912-4505";
+$(document).ready(function () {
+    let modalClosed = false;
 
+    $(window).scroll(function () {
+        let scrollTop = $(window).scrollTop();
+        let windowHeight = $(window).height();
+        let documentHeight = $(document).height();
 
-let modalShow = false;
-window.onscroll = function () {
-    let modal = document.getElementById("overlay")
-    let windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-    let documentHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
-    let scrollPosition = window.scrollY || window.pageXOffset || document.documentElement.scrollTop;
+        if (modalClosed===false &&scrollTop > (documentHeight - windowHeight) / 2 && !modalClosed) {
+            $('#overlay').css('display','flex')
+            $('body').css('overflow', 'hidden'); // قفل کردن اسکرول
+        }
+    });
 
-    if (modalShow === false && scrollPosition > (documentHeight - windowHeight) / 2) {
-        modal.style.display = "flex";
-        modalShow = true;
-    }
-}
+    $('#close_icon').on('click', function () {
+        modalClosed = true;
+        $('#overlay').hide();
+        $('body').css('overflow', 'auto'); // باز کردن اسکرول
+    });
+
+    $(window).on('click', function(event) {
+        if ($(event.target).is('#overlay')) {
+            modalClosed = true;
+            $('#overlay').hide();
+            $('body').css('overflow', 'auto'); // باز کردن اسکرول
+        }
+    });
+});
+
 
 function closePopup() {
     document.getElementById('overlay').style.display = 'none'
@@ -144,6 +159,29 @@ $('.shareWhatsAppBtn').click(function () {
     let url = $('#shareLinkInput').val();
     let whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(url)}`;
     window.open(whatsappUrl, '_blank');
+});
+
+$(function () {
+    $('#time-btn').countdown({
+        year: 2024, // YYYY Format
+        month: 8, // 1-12
+        day: 2, // 1-31
+        hour: 12, // 24 hour format 0-23
+        minute: 12, // 0-59
+        second: 12, // 0-59
+    });
+});
+$(function () {
+    $('#countdown').countdown({
+        timezone: -6
+    });
+});
+$(function () {
+
+    $('#countdown').countdown({
+        labels: true
+    });
+
 });
 
 AOS.init();

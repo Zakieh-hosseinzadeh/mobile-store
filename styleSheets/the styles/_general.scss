@@ -29,7 +29,7 @@ html, body {
 .container {
   width: 85%;
   margin: 0 auto;
-  padding: 12px;
+  padding: $gap;
   @media screen and (max-width: 992px) {
     width: 95%;
   }
@@ -41,11 +41,10 @@ html, body {
 
 .btn-shop {
   display: inline-block;
-
   background-color: var(--primary);
-
+  color: #fff;
   padding: 15px;
-  border-radius: 35px;
+  @include btnRadius();
   vertical-align: middle;
   color: #fff;
   @include transition();

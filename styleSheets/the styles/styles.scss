@@ -412,7 +412,7 @@ a#go-to-top:hover {
 .btn-like {
   display: flex;
   padding: 0;
-  width: 60%;
+  width: 80%;
   margin: 5px auto;
   transition: all .3s ease 0s;
   opacity: 0;
@@ -431,11 +431,18 @@ a#go-to-top:hover {
 .btn-like button{
   border: none;
   border-radius: 50%;
-  padding: 7px;
   background-color: var(--secondary);
   color: #fff;
   @include transition();
   cursor: pointer;
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  .fa-solid,.fa-brands{
+    vertical-align: middle;
+    font-size: 22px;
+  }
 }
 
 .btn-like button:hover{
@@ -538,33 +545,22 @@ a#go-to-top:hover {
   }
 
   .container-content h4 {
-    width: 140px;
     margin: 0 auto;
-    padding: $gap;
-
-    background-color: var(--primary);
-
-    color: #fff;
+    font-size: 25px;
+    color: #f00;
   }
 
   .container-content h2 {
     font-size: 2.5rem;
   }
 
-  .container-content a {
-    color: var(--secondary);
-
-    @include transition();
-  }
-
-  .container-content a:hover {
-    color: var(--primary);
-  }
 
   #time-btn {
+    direction: rtl;
     display: flex;
     column-gap: $gap;
     margin: 25px 0 65px 0;
+    justify-content: space-between;
 
     @media screen and (max-width: 1200px) {
       margin: 25px 0 35px 0;
@@ -574,14 +570,12 @@ a#go-to-top:hover {
     }
   }
 
-  .time {
+  .wrapper {
+
     padding: $gap;
     flex: 1;
     @include brRadius();
-
     box-shadow: $shadow;
-
-
     display: flex;
     flex-direction: column;
   }
@@ -672,8 +666,6 @@ a#go-to-top:hover {
 
 //section popular products
 #news {
-
-
   background-color: var(--gray);
 
   padding: 40px 0;
@@ -687,11 +679,10 @@ a#go-to-top:hover {
     background-color: white;
     @include brRadius();
     padding: 5px;
-
-    color: var(--text);
-
     box-shadow: $shadow;
-
+    input{
+      border-radius: 15px;
+    }
 
     @media screen and (max-width: 992px) {
       width: 70%;
@@ -704,11 +695,19 @@ a#go-to-top:hover {
 
   #user-email {
     padding: $gap;
-    direction: ltr;
+    direction: rtl;
     width: calc(100% - 100px);
+    background-color:white;
+  }
+  #user-email:focus{
+    outline: none;
+    border: none;
+    color: var(--text);
+    //border-radius: 10px;
+
   }
 
-  .title,
+   .title,
   .sub-title {
     text-align: center;
   }
@@ -786,6 +785,20 @@ a#go-to-top:hover {
     width: 60%;
     display: block;
     margin: 0 auto;
+  }
+  .sumsung,.motorola{
+    margin-top: 20px;
+  }
+  .nokia{
+    margin-top: 35px;
+  }
+  @media screen and (max-width: 576px){
+    .sumsung,.motorola{
+      margin-top: 10px;
+    }
+    .nokia{
+      margin-top: 15px;
+    }
   }
 }
 
@@ -874,9 +887,8 @@ a#go-to-top:hover {
     justify-content: space-between;
   }
 
-  .fa-brain {
-    color: green;
-    vertical-align: middle;
+  .fa-heart {
+    color: purple;
   }
 
   @media screen and (max-width: 992px) {
@@ -898,6 +910,7 @@ a#go-to-top:hover {
 
 
 #menu-wrapper {
+  display: none;
   color: var(--text);
   background-color: var(--terthery);
   width: 100%;
@@ -920,6 +933,7 @@ a#go-to-top:hover {
 }
 
 #menu-wrapper.menu-wrapper-close {
+  display: block;
   opacity: 1;
   transform: translateY(0%);
 }
@@ -996,7 +1010,9 @@ a#go-to-top:hover {
 
 
 
-
+.categories,.b-sell,.popular{
+  background-color: var(--background);
+}
 
 
 

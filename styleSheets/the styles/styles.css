@@ -31,6 +31,7 @@
   --blue: #a5bbcb;
   --gray: rgba(232, 232, 232, 0.368627451);
   --text: #000;
+  --background: #fff;
 }
 
 body[data-theme=light] {
@@ -39,15 +40,17 @@ body[data-theme=light] {
   --secondary: #232c35;
   --blue: #a5bbcb;
   --text: #000;
+  --background:#fff;
 }
 
 body[data-theme=dark] {
-  --primary: #534fff;
+  --primary: #7973fc;
   --terthery: #1a1a1a;
   --secondary: #304054;
   --blue: #A5BBF0;
   --gray: rgba(68, 68, 68, 0.37);
   --text: #fff;
+  --background:#2b2b2b;
 }
 
 @font-face {
@@ -83,6 +86,7 @@ body[data-theme=dark] {
   --blue: #a5bbcb;
   --gray: rgba(232, 232, 232, 0.368627451);
   --text: #000;
+  --background: #fff;
 }
 
 body[data-theme=light] {
@@ -91,15 +95,17 @@ body[data-theme=light] {
   --secondary: #232c35;
   --blue: #a5bbcb;
   --text: #000;
+  --background:#fff;
 }
 
 body[data-theme=dark] {
-  --primary: #534fff;
+  --primary: #7973fc;
   --terthery: #1a1a1a;
   --secondary: #304054;
   --blue: #A5BBF0;
   --gray: rgba(68, 68, 68, 0.37);
   --text: #fff;
+  --background:#2b2b2b;
 }
 
 * {
@@ -129,7 +135,7 @@ html, body {
 .container {
   width: 85%;
   margin: 0 auto;
-  padding: 12px;
+  padding: 15px;
 }
 @media screen and (max-width: 992px) {
   .container {
@@ -145,8 +151,12 @@ html, body {
 .btn-shop {
   display: inline-block;
   background-color: var(--primary);
+  color: #fff;
   padding: 15px;
   border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
   vertical-align: middle;
   color: #fff;
   transition: all 0.3s;
@@ -342,6 +352,7 @@ html, body {
   --blue: #a5bbcb;
   --gray: rgba(232, 232, 232, 0.368627451);
   --text: #000;
+  --background: #fff;
 }
 
 body[data-theme=light] {
@@ -350,15 +361,17 @@ body[data-theme=light] {
   --secondary: #232c35;
   --blue: #a5bbcb;
   --text: #000;
+  --background:#fff;
 }
 
 body[data-theme=dark] {
-  --primary: #534fff;
+  --primary: #7973fc;
   --terthery: #1a1a1a;
   --secondary: #304054;
   --blue: #A5BBF0;
   --gray: rgba(68, 68, 68, 0.37);
   --text: #fff;
+  --background:#2b2b2b;
 }
 
 .container-icon {
@@ -697,7 +710,7 @@ a#go-to-top:hover {
   border-radius: 15px;
   overflow: hidden;
   color: var(--text);
-  box-shadow: 1.5px 1.5px 3px #0E0E00, -1.5px -1.5px 0.5px rgba(93, 93, 93, 0.01), inset 0px 0px 0px #0e0e0e, inset 0px 0px 0px #5F5E5F;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   cursor: pointer;
 }
 @media screen and (max-width: 576px) {
@@ -841,7 +854,7 @@ a#go-to-top:hover {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
-  box-shadow: 1.5px 1.5px 3px #0E0E00, -1.5px -1.5px 0.5px rgba(93, 93, 93, 0.01), inset 0px 0px 0px #0e0e0e, inset 0px 0px 0px #5F5E5F;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   text-align: center;
   cursor: pointer;
   overflow: hidden;
@@ -884,7 +897,7 @@ a#go-to-top:hover {
 .btn-like {
   display: flex;
   padding: 0;
-  width: 60%;
+  width: 80%;
   margin: 5px auto;
   transition: all 0.3s ease 0s;
   opacity: 0;
@@ -902,7 +915,6 @@ a#go-to-top:hover {
 .btn-like button {
   border: none;
   border-radius: 50%;
-  padding: 7px;
   background-color: var(--secondary);
   color: #fff;
   transition: all 0.3s;
@@ -910,6 +922,13 @@ a#go-to-top:hover {
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
   cursor: pointer;
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+.btn-like button .fa-solid, .btn-like button .fa-brands {
+  vertical-align: middle;
+  font-size: 22px;
 }
 
 .btn-like button:hover {
@@ -1007,29 +1026,19 @@ a#go-to-top:hover {
   }
 }
 #ads-banner .container-content h4 {
-  width: 140px;
   margin: 0 auto;
-  padding: 15px;
-  background-color: var(--primary);
-  color: #fff;
+  font-size: 25px;
+  color: #f00;
 }
 #ads-banner .container-content h2 {
   font-size: 2.5rem;
 }
-#ads-banner .container-content a {
-  color: var(--secondary);
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-}
-#ads-banner .container-content a:hover {
-  color: var(--primary);
-}
 #ads-banner #time-btn {
+  direction: rtl;
   display: flex;
   column-gap: 15px;
   margin: 25px 0 65px 0;
+  justify-content: space-between;
 }
 @media screen and (max-width: 1200px) {
   #ads-banner #time-btn {
@@ -1041,13 +1050,13 @@ a#go-to-top:hover {
     margin: 10px 0 15px 0;
   }
 }
-#ads-banner .time {
+#ads-banner .wrapper {
   padding: 15px;
   flex: 1;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
-  box-shadow: 1.5px 1.5px 3px #0E0E00, -1.5px -1.5px 0.5px rgba(93, 93, 93, 0.01), inset 0px 0px 0px #0e0e0e, inset 0px 0px 0px #5F5E5F;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   display: flex;
   flex-direction: column;
 }
@@ -1101,7 +1110,7 @@ a#go-to-top:hover {
 }
 #popular-products .popular {
   transition: all 0.5s;
-  box-shadow: 1.5px 1.5px 3px #0E0E00, -1.5px -1.5px 0.5px rgba(93, 93, 93, 0.01), inset 0px 0px 0px #0e0e0e, inset 0px 0px 0px #5F5E5F;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   color: var(--text);
   text-align: center;
   cursor: pointer;
@@ -1134,8 +1143,10 @@ a#go-to-top:hover {
   -moz-border-radius: 15px;
   border-radius: 15px;
   padding: 5px;
-  color: var(--text);
-  box-shadow: 1.5px 1.5px 3px #0E0E00, -1.5px -1.5px 0.5px rgba(93, 93, 93, 0.01), inset 0px 0px 0px #0e0e0e, inset 0px 0px 0px #5F5E5F;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#news #news-form input {
+  border-radius: 15px;
 }
 @media screen and (max-width: 992px) {
   #news #news-form {
@@ -1147,8 +1158,14 @@ a#go-to-top:hover {
 }
 #news #user-email {
   padding: 15px;
-  direction: ltr;
+  direction: rtl;
   width: calc(100% - 100px);
+  background-color: white;
+}
+#news #user-email:focus {
+  outline: none;
+  border: none;
+  color: var(--text);
 }
 #news .title,
 #news .sub-title {
@@ -1217,6 +1234,20 @@ a#go-to-top:hover {
   display: block;
   margin: 0 auto;
 }
+#brands .sumsung, #brands .motorola {
+  margin-top: 20px;
+}
+#brands .nokia {
+  margin-top: 35px;
+}
+@media screen and (max-width: 576px) {
+  #brands .sumsung, #brands .motorola {
+    margin-top: 10px;
+  }
+  #brands .nokia {
+    margin-top: 15px;
+  }
+}
 
 #footer #footer-box {
   display: flex;
@@ -1252,7 +1283,7 @@ a#go-to-top:hover {
   column-gap: 15px;
 }
 #footer #app-wrapper a {
-  box-shadow: 1.5px 1.5px 3px #0E0E00, -1.5px -1.5px 0.5px rgba(93, 93, 93, 0.01), inset 0px 0px 0px #0e0e0e, inset 0px 0px 0px #5F5E5F;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 #footer #app-wrapper img {
   width: 90%;
@@ -1289,9 +1320,8 @@ a#go-to-top:hover {
   display: flex;
   justify-content: space-between;
 }
-#copy-right .fa-brain {
-  color: green;
-  vertical-align: middle;
+#copy-right .fa-heart {
+  color: purple;
 }
 @media screen and (max-width: 992px) {
   #copy-right .container {
@@ -1310,6 +1340,7 @@ a#go-to-top:hover {
 }
 
 #menu-wrapper {
+  display: none;
   color: var(--text);
   background-color: var(--terthery);
   width: 100%;
@@ -1334,6 +1365,7 @@ a#go-to-top:hover {
 }
 
 #menu-wrapper.menu-wrapper-close {
+  display: block;
   opacity: 1;
   transform: translateY(0%);
 }
@@ -1421,6 +1453,10 @@ a#go-to-top:hover {
 
 #remove-menu:hover {
   color: var(--primary);
+}
+
+.categories, .b-sell, .popular {
+  background-color: var(--background);
 }
 
 /*# sourceMappingURL=styles.css.map */

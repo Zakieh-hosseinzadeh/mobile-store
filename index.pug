@@ -21,6 +21,8 @@ html(lang="en")
 
     body
         main
+            a#go-to-top(href="#")
+                i.fa-solid.fa-arrow-up
             div#overlay
                 div#popup
                     h2 تبلیغات
@@ -30,9 +32,6 @@ html(lang="en")
                     p لورم ایپسوم متن ساختگی تولید سادگی نامفهوم صنعت چاپ
 
                     img(src="images/delete_icon.png" alt="تبلیغات" onclick="closePopup()")#close_icon
-
-            a#go-to-top(href="#")
-                i.fa-solid.fa-arrow-up
 
             label(for="themeToggle" type="checkbox").themeToggle.st-sunMoonThemeToggleBtn
                     input#themeToggle.themeToggleInput(type="checkbox")
@@ -340,20 +339,29 @@ html(lang="en")
                     h4 عجله کنید!
                     h2 "تا 25% تخفیف
                     h3 آن را بررسی کنید."
+                    //div#countdown
                     div#time-btn
-                        div.time
-                            span 00
-                            span روز
-                        div.time
-                            span 00
-                            span ساعت
-                        div.time
-                            span 00
-                            span دقیقه
-                        div.time
-                            span 00
-                            span ثانیه
-                    a(href="#") اکنون خرید کنید
+                        //div.time.days.clock-days
+                        //    div#canvas_days.clock-canvas
+                        //    div.text
+                        //        span 00
+                        //        span روز
+                        //div.time.hours.clock-hours
+                        //    div#canvas_hours.clock-canvas
+                        //    div.text
+                        //        span 00
+                        //        span ساعت
+                        //div.time.minuts.clock-minuts
+                        //    div#canvas_minuts.clock-canvas
+                        //    div.text
+                        //        span 00
+                        //        span دقیقه
+                        //div.time.seconds.clock-seconds
+                        //    div#canvas_seconds.clock-canvas
+                        //    div.text
+                        //        span 00
+                        //        span ثانیه
+                    a(href="#").btn-shop اکنون خرید کنید
             section#popular-products
                 .container
                     div.title
@@ -576,7 +584,7 @@ html(lang="en")
                         h4.sub-title برای اطلاع از آخرین اخبار ایمیل خود را وارد کنید.
 
                     form(action="" method="post")#news-form
-                        input(placeholder="Enter Your Email..." type="email")#user-email
+                        input(placeholder="ایمیل خود را در اینجا وارد کنید..." type="email")#user-email
                         input(type="submit" value="عضوم کن").btn-shop
             section#blogs
                 .container
@@ -607,16 +615,16 @@ html(lang="en")
                     div#brand-box
                         article.brand
                             img(src="images/iphone-logo.png" alt="logo")
-                        article.brand
-                            img(src="images/iphone-logo.png" alt="logo")
-                        article.brand
-                            img(src="images/iphone-logo.png" alt="logo")
-                        article.brand
-                            img(src="images/iphone-logo.png" alt="logo")
-                        article.brand
-                            img(src="images/iphone-logo.png" alt="logo")
-                        article.brand
-                            img(src="images/iphone-logo.png" alt="logo")
+                        article.brand.Huawei
+                            img(src="images/Huawei.png" alt="logo")
+                        article.brand.sumsung
+                            img(src="images/sumsung.png" alt="logo")
+                        article.brand.Xiami
+                            img(src="images/Xiami.png" alt="logo")
+                        article.brand.motorola
+                            img(src="images/motorola.png" alt="logo")
+                        article.brand.nokia
+                            img(src="images/nokia.png" alt="logo")
 
             section#footer
                 .container
@@ -693,12 +701,13 @@ html(lang="en")
                         p طراحی شده توسط
                             strong  زکیه حسین زاده
                             |  با
-                            i.fa-solid.fa-brain
+                            i.fa-solid.fa-heart
 
-    script(src="scripts/jquery-3.7.0.min.js")
-    script(src="scripts/jquery.bxslider.min.js")
-    script(src="scripts/slick.min.js")
-    script(src="scripts/aos.js")
-    script(src="scripts/main.js")
-    script(src="scripts/sweetalert2.all.min.js")
-    script(src="scripts/theScripts.js")
+    script(src="scripts/jquery-3.7.0.min.js" type="text/javascript")
+    script(src="scripts/jquery.bxslider.min.js" type="text/javascript")
+    script(src="scripts/slick.min.js" type="text/javascript")
+    script(src="scripts/aos.js" type="text/javascript")
+    script(src="scripts/main.js" type="text/javascript")
+    script(src="scripts/sweetalert2.all.min.js" type="text/javascript")
+    script(src="scripts/countdown.jquery.min.js" type="text/javascript")
+    script(src="scripts/theScripts.js" type="text/javascript")
