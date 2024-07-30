@@ -15,10 +15,10 @@
 }
 
 @mixin transition() {
-  transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
-  -webkit-transition:all 1.5s cubic-bezier(0, 0, 0.2, 1);
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
+  transition: all 1.2s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition:all 1.2s cubic-bezier(0, 0, 0.2, 1);
+  -moz-transition: all 1.2s cubic-bezier(0, 0, 0.2, 1);
+  -ms-transition:all 1.2s cubic-bezier(0, 0, 0.2, 1);
 }
 
 @mixin transformSCL() {
