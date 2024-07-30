@@ -1159,8 +1159,9 @@ a#go-to-top:hover {
 #news #user-email {
   padding: 15px;
   direction: rtl;
-  width: calc(100% - 100px);
-  background-color: white;
+  margin-left: 10px;
+  width: calc(100% - 107px);
+  background-color: white !important;
 }
 #news #user-email:focus {
   outline: none;
