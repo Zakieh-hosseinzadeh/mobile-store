@@ -66,14 +66,13 @@ html, body {
 
 .title {
   color: var(--text);
-
-  @include fontPinar();
   margin: 20px 0;
 
   h3 {
     margin: 0;
-    font-size: 25px;
+    font-size: 22px;
     display: inline-block;
+    @include fontPinar();
     @media screen and (max-width: 576px) {
       font-size: 16px;
       margin: 20px 0;
@@ -205,4 +204,3 @@ html, body {
 #close_icon:hover {
   opacity: 0.5;
 }
-

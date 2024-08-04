@@ -181,13 +181,13 @@ html, body {
 
 .title {
   color: var(--text);
-  font-family: "Pinar", "IRANYekan", sans-serif;
   margin: 20px 0;
 }
 .title h3 {
   margin: 0;
-  font-size: 25px;
+  font-size: 22px;
   display: inline-block;
+  font-family: "Pinar", "IRANYekan", sans-serif;
 }
 @media screen and (max-width: 576px) {
   .title h3 {
@@ -392,13 +392,14 @@ body[data-theme=dark] {
   box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgba(95, 94, 94, 0.25), inset 0px 0px 0px #0e0e0e, inset 0px 0px 0px #5f5e5e;
   border-radius: 50px;
   cursor: pointer;
+  direction: ltr;
 }
 
 .input:focus,
 .input:not(:invalid) {
   width: 200px;
   cursor: text;
-  box-shadow: 0 0 0 #0e0e0e, 0 0 0 rgba(95, 94, 94, 0.25), inset 1.5px 1.5px 3px #0e0e0e, inset -1.5px -1.5px 3px #5f5e5e;
+  box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgba(95, 94, 94, 0.25), inset 1.5px 1.5px 3px #0e0e0e, inset -1.5px -1.5px 3px #5f5e5e;
 }
 
 .input:focus + .icon,
@@ -660,6 +661,7 @@ a#go-to-top:hover {
 #home .box-wrapper #txt-slideshow h1 {
   font-size: 3.5em;
   margin: 20px 0;
+  font-family: "Pinar", "IRANYekan", sans-serif;
 }
 @media screen and (max-width: 768px) {
   #home .box-wrapper #txt-slideshow h1 {
@@ -914,7 +916,7 @@ a#go-to-top:hover {
 
 .btn-like button {
   border: none;
-  border-radius: 50%;
+  border-radius: 12%;
   background-color: var(--secondary);
   color: #fff;
   transition: all 1.2s cubic-bezier(0, 0, 0.2, 1);
@@ -928,7 +930,7 @@ a#go-to-top:hover {
 }
 .btn-like button .fa-solid, .btn-like button .fa-brands {
   vertical-align: middle;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .btn-like button:hover {
@@ -1013,9 +1015,6 @@ a#go-to-top:hover {
     left: 30px;
     width: 40%;
   }
-  #ads-banner .container-content h2 {
-    margin: 20px 0;
-  }
   #ads-banner .container-content h3 {
     margin: 10px 0;
   }
@@ -1031,6 +1030,8 @@ a#go-to-top:hover {
   color: #f00;
 }
 #ads-banner .container-content h2 {
+  margin: 20px 0;
+  font-family: "Pinar", "IRANYekan", sans-serif;
   font-size: 2.5rem;
 }
 #ads-banner #time-btn {
@@ -1039,6 +1040,7 @@ a#go-to-top:hover {
   column-gap: 15px;
   margin: 25px 0 65px 0;
   justify-content: space-between;
+  font-weight: bold;
 }
 @media screen and (max-width: 1200px) {
   #ads-banner #time-btn {
@@ -1139,14 +1141,13 @@ a#go-to-top:hover {
   width: 50%;
   margin: 0 auto;
   background-color: white;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  overflow: hidden;
   padding: 5px;
   box-shadow: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.075), 0 0 0 1px hsla(0, 0%, 0%, 0.05), 0 0.3px 0.4px hsla(0, 0%, 0%, 0.02), 0 0.9px 1.5px hsla(0, 0%, 0%, 0.045), 0 3.5px 6px hsla(0, 0%, 0%, 0.09);
-}
-#news #news-form input {
-  border-radius: 15px;
 }
 @media screen and (max-width: 992px) {
   #news #news-form {
@@ -1235,7 +1236,7 @@ a#go-to-top:hover {
   display: block;
   margin: 0 auto;
 }
-#brands .sumsung, #brands .motorola {
+#brands #iphone, #brands .sumsung, #brands .motorola {
   margin-top: 20px;
 }
 #brands .nokia {
@@ -1262,6 +1263,9 @@ a#go-to-top:hover {
 #footer .foot {
   flex: 1;
   color: var(--text);
+}
+#footer .foot h3 {
+  font-family: "Pinar", "IRANYekan", sans-serif;
 }
 @media screen and (max-width: 768px) {
   #footer .foot {

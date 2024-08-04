@@ -77,7 +77,7 @@ html(lang="en")
                                 i.fa-solid.fa-circle-chevron-left
                                 a(href="#")  خبرنامه
 
-            div#header
+            section#header
                 .container
                     header#top-header
                         a(href="index.html")#logo
@@ -96,7 +96,7 @@ html(lang="en")
                                     a(href="#news") خبرنامه
                         div.icons
                             div.container-icon
-                                input(type="text" name="text" required="" placeholder="Type to search...").input
+                                input(type="text" name="text" required="" placeholder="سرچ کنید...").input
                                 div.icon
                                     svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512").ionicon
                                         title Search
@@ -337,8 +337,8 @@ html(lang="en")
                     img(src="images/main-banner-01.jpg" alt="ads banner")
                 div.container-content
                     h4 عجله کنید!
-                    h2 "تا 25% تخفیف
-                    h3 آن را بررسی کنید."
+                    h2 تا 25% تخفیف
+                    h3 آن را بررسی کنید.
                     //div#countdown
                     div#time-btn
                         //div.time.days.clock-days
@@ -613,8 +613,9 @@ html(lang="en")
             section#brands
                 .container
                     div#brand-box
-                        article.brand
-                            img(src="images/iphone-logo.png" alt="logo")
+                        article#iphone.brand
+                            img(src="images/iphone.png" alt="logo")
+                            i.fa-brands.fa-iphone
                         article.brand.Huawei
                             img(src="images/Huawei.png" alt="logo")
                         article.brand.sumsung
@@ -694,10 +695,7 @@ html(lang="en")
             section#copy-right
                 .container
                     div#copy
-                        p تمامی حقوق محفوط و متعلق به وبسایت ... میباشد.CopyRight
-                            i.fa-solid.fa-copyright
-                            | ۲۰۲۲
-
+                        p تمامی حقوق محفوط و متعلق به وبسایت ... میباشد.
                         p طراحی شده توسط
                             strong  زکیه حسین زاده
                             |     با
