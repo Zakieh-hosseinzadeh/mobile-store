@@ -619,8 +619,7 @@ a#go-to-top:hover {
   .menu-pup li a:hover,
   .menu-pup a.active {
     background-color: var(--blue);
-
-    padding: 7px;
+    padding: 10px;
     border-radius: 25px;
     @media screen and (max-width: 576px) {
       padding: 5px;
