@@ -288,7 +288,6 @@ html, body {
 }
 
 #popup {
-  font-family: "Pinar", "IRANYekan", sans-serif;
   width: 740px;
   height: 410px;
   /*border: 1px solid red;*/
@@ -303,6 +302,7 @@ html, body {
 
 #popup h2 {
   font-size: 30px;
+  font-family: "Pinar", "IRANYekan", sans-serif;
 }
 
 #close_icon {
@@ -556,7 +556,7 @@ a#go-to-top:hover {
   align-items: center;
 }
 #top-header #logo img {
-  width: 100px;
+  width: 80px;
 }
 @media screen and (max-width: 992px) {
   #top-header {

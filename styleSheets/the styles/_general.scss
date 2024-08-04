@@ -176,7 +176,7 @@ html, body {
 }
 
 #popup {
-  @include fontPinar();
+
   width: 740px;
   height: 410px;
   /*border: 1px solid red;*/
@@ -192,6 +192,7 @@ html, body {
 
 #popup h2 {
   font-size: 30px;
+  @include fontPinar();
 }
 
 #close_icon {

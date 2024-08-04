@@ -45,7 +45,7 @@ a#go-to-top:hover {
   align-items: center;
 
   #logo img {
-    width: 100px;
+    width: 80px;
 
   }
 
@@ -429,7 +429,7 @@ a#go-to-top:hover {
 }
 
 
-.btn-like button{
+.btn-like button {
   border: none;
   border-radius: 12%;
   background-color: var(--secondary);
@@ -440,13 +440,13 @@ a#go-to-top:hover {
   width: 40px;
   height: 40px;
 
-  .fa-solid,.fa-brands{
+  .fa-solid, .fa-brands {
     vertical-align: middle;
     font-size: 20px;
   }
 }
 
-.btn-like button:hover{
+.btn-like button:hover {
   background-color: var(--primary);
 }
 
@@ -697,9 +697,10 @@ a#go-to-top:hover {
     direction: rtl;
     margin-left: 10px;
     width: calc(100% - 107px);
-    background-color:white!important;
+    background-color: white !important;
   }
-  #user-email:focus{
+
+  #user-email:focus {
     outline: none;
     border: none;
     color: var(--text);
@@ -707,7 +708,7 @@ a#go-to-top:hover {
 
   }
 
-   .title,
+  .title,
   .sub-title {
     text-align: center;
   }
@@ -786,20 +787,24 @@ a#go-to-top:hover {
     display: block;
     margin: 0 auto;
   }
-  .sumsung,.motorola{
+
+  .sumsung, .motorola {
     margin-top: 20px;
   }
-  #iphone img{
+
+  #iphone img {
     width: 100%;
   }
-  .nokia{
+
+  .nokia {
     margin-top: 35px;
   }
-  @media screen and (max-width: 576px){
-    .sumsung,.motorola{
+
+  @media screen and (max-width: 576px) {
+    .sumsung, .motorola {
       margin-top: 10px;
     }
-    .nokia{
+    .nokia {
       margin-top: 15px;
     }
   }
@@ -821,7 +826,8 @@ a#go-to-top:hover {
   .foot {
     flex: 1;
     color: var(--text);
-    h3{
+
+    h3 {
       @include fontPinar();
     }
   }
@@ -831,8 +837,9 @@ a#go-to-top:hover {
       flex-basis: 47%;
     }
     @media screen and (max-width: 576px) {
-      .foot{
-      flex-basis: 52%;}
+      .foot {
+        flex-basis: 52%;
+      }
     }
 
   }
@@ -886,6 +893,7 @@ a#go-to-top:hover {
 #copy-right {
   background-color: var(--gray);
   color: var(--text);
+
   #copy {
     text-align: center;
     margin: 0;
@@ -1011,13 +1019,13 @@ a#go-to-top:hover {
   font-size: 40px;
   @include transition();
 }
-#remove-menu:hover{
+
+#remove-menu:hover {
   color: var(--primary);
 }
 
 
-
-.categories,.b-sell,.popular{
+.categories, .b-sell, .popular {
   background-color: var(--background);
 }
 
