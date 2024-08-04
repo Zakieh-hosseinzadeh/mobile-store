@@ -1236,8 +1236,11 @@ a#go-to-top:hover {
   display: block;
   margin: 0 auto;
 }
-#brands #iphone, #brands .sumsung, #brands .motorola {
+#brands .sumsung, #brands .motorola {
   margin-top: 20px;
+}
+#brands #iphone img {
+  width: 80%;
 }
 #brands .nokia {
   margin-top: 35px;

@@ -786,8 +786,11 @@ a#go-to-top:hover {
     display: block;
     margin: 0 auto;
   }
-  #iphone,.sumsung,.motorola{
+  .sumsung,.motorola{
     margin-top: 20px;
+  }
+  #iphone img{
+    width: 80%;
   }
   .nokia{
     margin-top: 35px;
