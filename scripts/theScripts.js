@@ -169,6 +169,7 @@ $(function () {
         hour: 12, // 24 hour format 0-23
         minute: 12, // 0-59
         second: 12, // 0-59
+        // dir:rtl,
     });
 });
 $(function () {

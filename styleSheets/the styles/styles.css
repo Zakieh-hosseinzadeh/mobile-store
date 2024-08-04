@@ -38,7 +38,7 @@ body[data-theme=light] {
   --primary: #7774ff;
   --terthery: #fff;
   --secondary: #232c35;
-  --blue: #a5bbcb;
+  --blue: #cdeaff;
   --text: #000;
   --background:#fff;
 }
@@ -47,7 +47,7 @@ body[data-theme=dark] {
   --primary: #7973fc;
   --terthery: #1a1a1a;
   --secondary: #304054;
-  --blue: #A5BBF0;
+  --blue: #cdeaff;
   --gray: rgba(68, 68, 68, 0.37);
   --text: #fff;
   --background:#2b2b2b;
@@ -93,7 +93,7 @@ body[data-theme=light] {
   --primary: #7774ff;
   --terthery: #fff;
   --secondary: #232c35;
-  --blue: #a5bbcb;
+  --blue: #cdeaff;
   --text: #000;
   --background:#fff;
 }
@@ -102,7 +102,7 @@ body[data-theme=dark] {
   --primary: #7973fc;
   --terthery: #1a1a1a;
   --secondary: #304054;
-  --blue: #A5BBF0;
+  --blue: #cdeaff;
   --gray: rgba(68, 68, 68, 0.37);
   --text: #fff;
   --background:#2b2b2b;
@@ -298,6 +298,9 @@ html, body {
   background-repeat: no-repeat;
   padding: 50px;
   position: relative;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
 }
 
 #popup h2 {
@@ -359,7 +362,7 @@ body[data-theme=light] {
   --primary: #7774ff;
   --terthery: #fff;
   --secondary: #232c35;
-  --blue: #a5bbcb;
+  --blue: #cdeaff;
   --text: #000;
   --background:#fff;
 }
@@ -368,7 +371,7 @@ body[data-theme=dark] {
   --primary: #7973fc;
   --terthery: #1a1a1a;
   --secondary: #304054;
-  --blue: #A5BBF0;
+  --blue: #cdeaff;
   --gray: rgba(68, 68, 68, 0.37);
   --text: #fff;
   --background:#2b2b2b;
@@ -754,6 +757,9 @@ a#go-to-top:hover {
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
 }
 @media screen and (max-width: 576px) {
   #amazings #pro-box .amazing-things {
@@ -827,6 +833,9 @@ a#go-to-top:hover {
 }
 .b-sell-box .b-sell {
   color: var(--text);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
 }
 .b-sell-box .b-sell a {
   position: relative;
@@ -1117,6 +1126,9 @@ a#go-to-top:hover {
   text-align: center;
   cursor: pointer;
   overflow: hidden;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
 }
 #popular-products .popular img {
   width: 100%;
@@ -1185,6 +1197,9 @@ a#go-to-top:hover {
 #blogs .blog {
   flex: 1;
   overflow: hidden;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
   color: var(--text);
 }
 #blogs .blog img {

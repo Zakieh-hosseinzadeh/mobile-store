@@ -269,6 +269,7 @@ a#go-to-top:hover {
       position: relative;
       overflow: hidden;
       cursor: pointer;
+      @include brRadius();
       @media screen and (max-width: 576px) {
         flex-basis: 52%;
       }
@@ -340,9 +341,10 @@ a#go-to-top:hover {
   display: flex;
   flex-wrap: wrap;
   column-gap: $gap;
-
   .b-sell {
     color: var(--text);
+    @include brRadius();
+
   }
 
   .b-sell a {
@@ -642,15 +644,12 @@ a#go-to-top:hover {
 
   .popular {
     transition: all 0.5s;
-
-
     box-shadow: $shadow;
-
     color: var(--text);
-
     text-align: center;
     cursor: pointer;
     overflow: hidden;
+    @include brRadius();
   }
 
   .popular img {
@@ -730,7 +729,7 @@ a#go-to-top:hover {
   .blog {
     flex: 1;
     overflow: hidden;
-
+    @include brRadius();
     color: var(--text);
   }
 
