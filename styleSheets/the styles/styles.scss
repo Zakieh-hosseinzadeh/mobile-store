@@ -29,13 +29,16 @@ a#go-to-top:hover {
   font-size: 20px;
 }
 
-//#header{
-//  position: sticky;
-//  top: 0;
-//  left: 0;
-//  background-color: rgba(232, 232, 232, 0.89);
-//  z-index: 30;
-//}
+#header{
+  //position: sticky;
+  //top: 0;
+  //left: 0;
+  //background-color: rgba(232, 232, 232, 0.89);
+  //z-index: 30;
+   .container{
+      padding: 4px;
+    }
+}
 
 #top-header {
 
@@ -328,7 +331,7 @@ a#go-to-top:hover {
     }
 
     .amazing-things:hover > .banner-wrapper > a > img {
-      transform: scale(1.15);
+      transform: scale(1.1);
     }
   }
 }
