@@ -772,6 +772,10 @@ a#go-to-top:hover {
   -webkit-transition: all 1.2s cubic-bezier(0, 0, 0.2, 1);
   -moz-transition: all 1.2s cubic-bezier(0, 0, 0.2, 1);
   -ms-transition: all 1.2s cubic-bezier(0, 0, 0.2, 1);
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
 }
 #amazings #pro-box .banner-content {
   color: #000 !important;
@@ -820,10 +824,7 @@ a#go-to-top:hover {
   background-color: #304054;
 }
 #amazings #pro-box .amazing-things:hover > .banner-wrapper > a > img {
-  transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
+  transform: scale(1.15);
 }
 
 .b-sell-box {

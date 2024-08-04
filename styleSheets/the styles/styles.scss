@@ -278,7 +278,7 @@ a#go-to-top:hover {
     .amazing-things img {
       width: 100%;
       @include transition();
-
+      @include transformSCL();
     }
 
     .banner-content {
@@ -328,7 +328,7 @@ a#go-to-top:hover {
     }
 
     .amazing-things:hover > .banner-wrapper > a > img {
-      @include transformSCL();
+      transform: scale(1.15);
     }
   }
 }
