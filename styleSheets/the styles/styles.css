@@ -1275,6 +1275,11 @@ a#go-to-top:hover {
     flex-basis: 47%;
   }
 }
+@media screen and (max-width: 768px) and (max-width: 576px) {
+  #footer .foot {
+    flex-basis: 52%;
+  }
+}
 #footer .foot:last-child {
   flex-grow: 1.5;
 }

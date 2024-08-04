@@ -830,6 +830,11 @@ a#go-to-top:hover {
     .foot {
       flex-basis: 47%;
     }
+    @media screen and (max-width: 576px) {
+      .foot{
+      flex-basis: 52%;}
+    }
+
   }
 
   .foot:last-child {
